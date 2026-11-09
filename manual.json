@@ -1,0 +1,855 @@
+{
+ "schema": "fieldwork/worked-example-manual/1",
+ "example": "urn:fieldwork:example:sea-level-rise-philippines",
+ "intro": "Each workflow reads the files of this repository: the projections fetched at a fixed commit, the points and the study area chosen from a downloaded copy. Start from an empty canvas: Project, then New project.",
+ "workflows": [
+  {
+   "name": "Which tide gauge’s projection applies to each facility, and how far is it?",
+   "steps": [
+    {
+     "click": "#new-project",
+     "label": "New project",
+     "opens": "New project"
+    },
+    {
+     "fill": "project-name-input",
+     "label": "Name",
+     "value": "Sea-level rise at Manila’s health facilities",
+     "dialog": "New project"
+    },
+    {
+     "fill": "project-subject-input",
+     "label": "Subject",
+     "value": "Published sea-level projections, and which applies to each facility",
+     "dialog": "New project"
+    },
+    {
+     "click": "#project-create",
+     "label": "Create project",
+     "dialog": "New project"
+    },
+    {
+     "fill": "workflow-name-edit",
+     "view": "project",
+     "label": "This workflow’s name — the question it answers",
+     "value": "Which tide gauge’s projection applies to each facility, and how far is it?"
+    },
+    {
+     "note": "A published sea-level projection is for a tide gauge, not for every place. Before reading one for a facility, find which gauge it is nearest and how far away that is."
+    },
+    {
+     "add": "study_area",
+     "as": "area"
+    },
+    {
+     "select": "area"
+    },
+    {
+     "click": "#edit-study-area",
+     "label": "Select area on map",
+     "opens": "Choose your study area"
+    },
+    {
+     "click": "#area-file-source summary",
+     "label": "Use a boundary file you already have",
+     "dialog": "Choose your study area"
+    },
+    {
+     "fill": "area-file-name-key",
+     "label": "Property holding each boundary’s name",
+     "value": "name",
+     "dialog": "Choose your study area"
+    },
+    {
+     "file": "area-file-input",
+     "label": "Choose a GeoJSON file…",
+     "path": "data/manila-study-area.geojson",
+     "dialog": "Choose your study area"
+    },
+    {
+     "pick": "area-boundary-pick",
+     "label": "Units",
+     "values": [
+      "Manila coastal study area"
+     ],
+     "dialog": "Choose your study area"
+    },
+    {
+     "click": "#area-boundary-use",
+     "label": "Use the selected units",
+     "dialog": "Choose your study area"
+    },
+    {
+     "click": "#area-apply",
+     "label": "Apply study area",
+     "dialog": "Choose your study area"
+    },
+    {
+     "note": "194 named hospitals and clinics in the box, as OpenStreetMap records them (ODbL). Not a register and not complete: an absence is not evidence of absence."
+    },
+    {
+     "add": "point_input",
+     "as": "facilities"
+    },
+    {
+     "select": "facilities"
+    },
+    {
+     "click": "#edit-input-data",
+     "label": "Prepare input data",
+     "opens": "Input data"
+    },
+    {
+     "choose": "input-mode",
+     "label": "Input method",
+     "value": "geojson",
+     "shown": "Import GeoJSON"
+    },
+    {
+     "file": "input-file",
+     "label": "Local file · 5 MB maximum",
+     "path": "data/manila-health-facilities.geojson"
+    },
+    {
+     "click": "#input-apply",
+     "label": "Save Edits"
+    },
+    {
+     "fill": "source-label",
+     "label": "Source label",
+     "value": "Manila health facilities"
+    },
+    {
+     "click": "[data-label-form=\"source-label\"] button",
+     "label": "Apply label"
+    },
+    {
+     "note": "The eight Philippine tide gauges the projections cover."
+    },
+    {
+     "add": "point_input",
+     "as": "sites"
+    },
+    {
+     "select": "sites"
+    },
+    {
+     "click": "#edit-input-data",
+     "label": "Prepare input data",
+     "opens": "Input data"
+    },
+    {
+     "choose": "input-mode",
+     "label": "Input method",
+     "value": "geojson",
+     "shown": "Import GeoJSON"
+    },
+    {
+     "file": "input-file",
+     "label": "Local file · 5 MB maximum",
+     "path": "data/ar6-projection-sites.geojson"
+    },
+    {
+     "click": "#input-apply",
+     "label": "Save Edits"
+    },
+    {
+     "fill": "source-label",
+     "label": "Source label",
+     "value": "AR6 projection sites"
+    },
+    {
+     "click": "[data-label-form=\"source-label\"] button",
+     "label": "Apply label"
+    },
+    {
+     "note": "The projections, in millimetres above the 1995–2014 average."
+    },
+    {
+     "add": "table_input",
+     "as": "projections"
+    },
+    {
+     "select": "projections"
+    },
+    {
+     "click": "#open-table",
+     "label": "Configure…",
+     "opens": "Tabular data"
+    },
+    {
+     "click": "#table-remote summary",
+     "label": "Or fetch from a URL",
+     "dialog": "Tabular data"
+    },
+    {
+     "fill": "table-url",
+     "label": "URL of a CSV, Stata file or zip",
+     "value": "https://raw.githubusercontent.com/digital-twin-ph/example-2026-sea-level-rise-philippines/c9389886237d9c7885dc82d6cbefcf0fbb2fdfdc/data/ar6-projections-philippine-gauges.csv",
+     "dialog": "Tabular data"
+    },
+    {
+     "click": "#table-fetch",
+     "label": "Fetch",
+     "dialog": "Tabular data"
+    },
+    {
+     "choose": "table-shape",
+     "label": "Shape of the file",
+     "value": "long",
+     "shown": "Long",
+     "dialog": "Tabular data"
+    },
+    {
+     "choose": "table-value",
+     "label": "Value column",
+     "value": "value_mm",
+     "dialog": "Tabular data"
+    },
+    {
+     "tick": "table-keys",
+     "label": "Key columns",
+     "values": [
+      "site_id",
+      "scenario",
+      "basis",
+      "family",
+      "year",
+      "quantile"
+     ],
+     "dialog": "Tabular data"
+    },
+    {
+     "tick": "table-distinct",
+     "label": "List the distinct values of",
+     "values": [
+      "site_id"
+     ],
+     "dialog": "Tabular data"
+    },
+    {
+     "fill": "table-unit",
+     "label": "Unit of the value (entered by you)",
+     "value": "millimetre",
+     "dialog": "Tabular data"
+    },
+    {
+     "click": "#table-save",
+     "label": "Apply",
+     "dialog": "Tabular data"
+    },
+    {
+     "note": "Declare what the projections are: the AR6 dataset, its baseline, its unit and the three citations its licence asks for. A published ruleset holds them."
+    },
+    {
+     "add": "apply_ruleset",
+     "as": "extract"
+    },
+    {
+     "select": "extract"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Apply ruleset"
+    },
+    {
+     "choose": "ruleset-choice",
+     "label": "Ruleset",
+     "value": "urn:fieldwork:ruleset:extract-contract@1.0.0",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "click": "#ruleset-config #config-apply",
+     "label": "Apply",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "connect": {
+      "from": "projections",
+      "to": "extract",
+      "port": "projections"
+     }
+    },
+    {
+     "note": "Assign each facility the nearest gauge that has a projection, with the distance."
+    },
+    {
+     "add": "slr_site_assignment",
+     "as": "assignment"
+    },
+    {
+     "connect": {
+      "from": "facilities",
+      "to": "assignment",
+      "port": "points"
+     }
+    },
+    {
+     "connect": {
+      "from": "sites",
+      "to": "assignment",
+      "port": "sites"
+     }
+    },
+    {
+     "connect": {
+      "from": "extract",
+      "to": "assignment",
+      "port": "projections"
+     }
+    },
+    {
+     "add": "map_output",
+     "as": "map"
+    },
+    {
+     "connect": {
+      "from": "area",
+      "to": "map",
+      "port": "area"
+     }
+    },
+    {
+     "connect": {
+      "from": "facilities",
+      "to": "map",
+      "port": "points"
+     }
+    },
+    {
+     "select": "map"
+    },
+    {
+     "click": "#add-point-input",
+     "label": "Add point input"
+    },
+    {
+     "connect": {
+      "from": "sites",
+      "to": "map",
+      "port": "points_2"
+     }
+    },
+    {
+     "select": "map"
+    },
+    {
+     "fill": "map-label",
+     "label": "Results tab name",
+     "value": "Facilities and gauges"
+    },
+    {
+     "add": "table_output",
+     "as": "table"
+    },
+    {
+     "connect": {
+      "from": "assignment",
+      "to": "table",
+      "port": "table"
+     }
+    },
+    {
+     "run": true
+    },
+    {
+     "see": "every facility assigned Manila’s gauge, 145, with its distance in metres",
+     "check": "145"
+    }
+   ]
+  },
+  {
+   "name": "How much is sea level projected to rise at each facility’s gauge by 2100?",
+   "steps": [
+    {
+     "click": "#add-workflow",
+     "label": "Add workflow",
+     "view": "workflow"
+    },
+    {
+     "fill": "workflow-name-edit",
+     "view": "project",
+     "label": "This workflow’s name — the question it answers",
+     "value": "How much is sea level projected to rise at each facility’s gauge by 2100?"
+    },
+    {
+     "note": "The same facilities, gauges and projections. Then one projection for each gauge, so it can be brought beside each facility."
+    },
+    {
+     "add": "study_area",
+     "as": "area"
+    },
+    {
+     "select": "area"
+    },
+    {
+     "click": "#edit-study-area",
+     "label": "Select area on map",
+     "opens": "Choose your study area"
+    },
+    {
+     "click": "#area-file-source summary",
+     "label": "Use a boundary file you already have",
+     "dialog": "Choose your study area"
+    },
+    {
+     "fill": "area-file-name-key",
+     "label": "Property holding each boundary’s name",
+     "value": "name",
+     "dialog": "Choose your study area"
+    },
+    {
+     "file": "area-file-input",
+     "label": "Choose a GeoJSON file…",
+     "path": "data/manila-study-area.geojson",
+     "dialog": "Choose your study area"
+    },
+    {
+     "pick": "area-boundary-pick",
+     "label": "Units",
+     "values": [
+      "Manila coastal study area"
+     ],
+     "dialog": "Choose your study area"
+    },
+    {
+     "click": "#area-boundary-use",
+     "label": "Use the selected units",
+     "dialog": "Choose your study area"
+    },
+    {
+     "click": "#area-apply",
+     "label": "Apply study area",
+     "dialog": "Choose your study area"
+    },
+    {
+     "add": "point_input",
+     "as": "facilities"
+    },
+    {
+     "select": "facilities"
+    },
+    {
+     "click": "#edit-input-data",
+     "label": "Prepare input data",
+     "opens": "Input data"
+    },
+    {
+     "choose": "input-mode",
+     "label": "Input method",
+     "value": "geojson",
+     "shown": "Import GeoJSON"
+    },
+    {
+     "file": "input-file",
+     "label": "Local file · 5 MB maximum",
+     "path": "data/manila-health-facilities.geojson"
+    },
+    {
+     "click": "#input-apply",
+     "label": "Save Edits"
+    },
+    {
+     "fill": "source-label",
+     "label": "Source label",
+     "value": "Manila health facilities"
+    },
+    {
+     "click": "[data-label-form=\"source-label\"] button",
+     "label": "Apply label"
+    },
+    {
+     "add": "point_input",
+     "as": "sites"
+    },
+    {
+     "select": "sites"
+    },
+    {
+     "click": "#edit-input-data",
+     "label": "Prepare input data",
+     "opens": "Input data"
+    },
+    {
+     "choose": "input-mode",
+     "label": "Input method",
+     "value": "geojson",
+     "shown": "Import GeoJSON"
+    },
+    {
+     "file": "input-file",
+     "label": "Local file · 5 MB maximum",
+     "path": "data/ar6-projection-sites.geojson"
+    },
+    {
+     "click": "#input-apply",
+     "label": "Save Edits"
+    },
+    {
+     "fill": "source-label",
+     "label": "Source label",
+     "value": "AR6 projection sites"
+    },
+    {
+     "click": "[data-label-form=\"source-label\"] button",
+     "label": "Apply label"
+    },
+    {
+     "add": "table_input",
+     "as": "projections"
+    },
+    {
+     "select": "projections"
+    },
+    {
+     "click": "#open-table",
+     "label": "Configure…",
+     "opens": "Tabular data"
+    },
+    {
+     "click": "#table-remote summary",
+     "label": "Or fetch from a URL",
+     "dialog": "Tabular data"
+    },
+    {
+     "fill": "table-url",
+     "label": "URL of a CSV, Stata file or zip",
+     "value": "https://raw.githubusercontent.com/digital-twin-ph/example-2026-sea-level-rise-philippines/c9389886237d9c7885dc82d6cbefcf0fbb2fdfdc/data/ar6-projections-philippine-gauges.csv",
+     "dialog": "Tabular data"
+    },
+    {
+     "click": "#table-fetch",
+     "label": "Fetch",
+     "dialog": "Tabular data"
+    },
+    {
+     "choose": "table-shape",
+     "label": "Shape of the file",
+     "value": "long",
+     "shown": "Long",
+     "dialog": "Tabular data"
+    },
+    {
+     "choose": "table-value",
+     "label": "Value column",
+     "value": "value_mm",
+     "dialog": "Tabular data"
+    },
+    {
+     "tick": "table-keys",
+     "label": "Key columns",
+     "values": [
+      "site_id",
+      "scenario",
+      "basis",
+      "family",
+      "year",
+      "quantile"
+     ],
+     "dialog": "Tabular data"
+    },
+    {
+     "tick": "table-distinct",
+     "label": "List the distinct values of",
+     "values": [
+      "site_id"
+     ],
+     "dialog": "Tabular data"
+    },
+    {
+     "fill": "table-unit",
+     "label": "Unit of the value (entered by you)",
+     "value": "millimetre",
+     "dialog": "Tabular data"
+    },
+    {
+     "click": "#table-save",
+     "label": "Apply",
+     "dialog": "Tabular data"
+    },
+    {
+     "add": "apply_ruleset",
+     "as": "extract"
+    },
+    {
+     "select": "extract"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Apply ruleset"
+    },
+    {
+     "choose": "ruleset-choice",
+     "label": "Ruleset",
+     "value": "urn:fieldwork:ruleset:extract-contract@1.0.0",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "click": "#ruleset-config #config-apply",
+     "label": "Apply",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "connect": {
+      "from": "projections",
+      "to": "extract",
+      "port": "projections"
+     }
+    },
+    {
+     "add": "slr_site_assignment",
+     "as": "assignment"
+    },
+    {
+     "connect": {
+      "from": "facilities",
+      "to": "assignment",
+      "port": "points"
+     }
+    },
+    {
+     "connect": {
+      "from": "sites",
+      "to": "assignment",
+      "port": "sites"
+     }
+    },
+    {
+     "connect": {
+      "from": "extract",
+      "to": "assignment",
+      "port": "projections"
+     }
+    },
+    {
+     "note": "Narrow the projections to one of each: a middle-of-the-road scenario, SSP2-4.5; the rise relative to the land, which counts the land’s own sinking; 2100; and the middle of the likely range. Each is a choice you state; the file holds the others."
+    },
+    {
+     "add": "select_rows",
+     "as": "scenario"
+    },
+    {
+     "connect": {
+      "from": "extract",
+      "to": "scenario",
+      "port": "records"
+     }
+    },
+    {
+     "select": "scenario"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Select rows by value"
+    },
+    {
+     "choose": "select-key",
+     "label": "Key column to choose by",
+     "value": "scenario",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "label:has([data-select-value=\"ssp245\"])",
+     "label": "ssp245",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Select rows by value"
+    },
+    {
+     "add": "select_rows",
+     "as": "family"
+    },
+    {
+     "connect": {
+      "from": "scenario",
+      "to": "family",
+      "port": "records"
+     }
+    },
+    {
+     "select": "family"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Select rows by value"
+    },
+    {
+     "choose": "select-key",
+     "label": "Key column to choose by",
+     "value": "family",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "label:has([data-select-value=\"with_vlm\"])",
+     "label": "with_vlm",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Select rows by value"
+    },
+    {
+     "add": "select_rows",
+     "as": "year"
+    },
+    {
+     "connect": {
+      "from": "family",
+      "to": "year",
+      "port": "records"
+     }
+    },
+    {
+     "select": "year"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Select rows by value"
+    },
+    {
+     "choose": "select-key",
+     "label": "Key column to choose by",
+     "value": "year",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "label:has([data-select-value=\"2100\"])",
+     "label": "2100",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Select rows by value"
+    },
+    {
+     "add": "select_rows",
+     "as": "median"
+    },
+    {
+     "connect": {
+      "from": "year",
+      "to": "median",
+      "port": "records"
+     }
+    },
+    {
+     "select": "median"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Select rows by value"
+    },
+    {
+     "choose": "select-key",
+     "label": "Key column to choose by",
+     "value": "quantile",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "label:has([data-select-value=\"0.5\"])",
+     "label": "0.5",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Select rows by value"
+    },
+    {
+     "note": "Show the assignments in a table and run, so the next step can read their columns."
+    },
+    {
+     "add": "table_output",
+     "as": "table"
+    },
+    {
+     "connect": {
+      "from": "assignment",
+      "to": "table",
+      "port": "table"
+     }
+    },
+    {
+     "run": true
+    },
+    {
+     "note": "Bring each gauge’s rise beside each facility, matched on the gauge."
+    },
+    {
+     "add": "relate_table",
+     "as": "rise"
+    },
+    {
+     "connect": {
+      "from": "assignment",
+      "to": "rise",
+      "port": "records"
+     }
+    },
+    {
+     "connect": {
+      "from": "median",
+      "to": "rise",
+      "port": "related"
+     }
+    },
+    {
+     "select": "rise"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Relate a column from another table"
+    },
+    {
+     "choose": "relate-on",
+     "label": "Matched on, in the first table",
+     "value": "projection_site",
+     "dialog": "Relate a column from another table"
+    },
+    {
+     "choose": "relate-right-on",
+     "label": "The same, in the second table",
+     "value": "site_id",
+     "dialog": "Relate a column from another table"
+    },
+    {
+     "choose": "relate-bring",
+     "label": "Bring across",
+     "value": "value_mm",
+     "dialog": "Relate a column from another table"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Relate a column from another table"
+    },
+    {
+     "connect": {
+      "from": "rise",
+      "to": "table",
+      "port": "table"
+     }
+    },
+    {
+     "run": true
+    },
+    {
+     "see": "each facility, its gauge, its distance, and the rise there: 1,124 mm by 2100 under SSP2-4.5, the middle projection, with vertical land motion",
+     "check": "1124"
+    }
+   ]
+  }
+ ]
+}

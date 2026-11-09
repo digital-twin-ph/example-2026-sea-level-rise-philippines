@@ -55,9 +55,42 @@ The project file `fieldwork-project.json.gz` holds the workflows; `manual.json` 
 
 - **Which places would flood.** That needs the ground's height and the local sea's height measured from the same
   surface. Open terrain models give heights above a geoid, not above the local sea, and the offset between the two
-  at Manila is not in this repository. `docs/vertical-datums.svg` draws the relation.
+  at Manila is not in this repository. [What a flood question would need](#what-a-flood-question-would-need) says
+  what is known.
 - **That a facility's rise is its gauge's.** A projection is for a gauge. The distance to it is part of the result.
 - **Anything about health.** No outcome is here.
+
+## What a flood question would need
+
+Read on 2026-11-07 and 2026-11-08 for Fieldwork's research note on terrain models and vertical datums. Nothing was
+downloaded and nothing here is built.
+
+![A cross-section of a low coast, not to scale. From the bottom: the WGS84 ellipsoid; the geoid (EGM2008, EGM96); local mean sea level over 1995–2014, the AR6 baseline, above the geoid by an offset; and a projected sea level, the baseline plus the AR6 rise. On land, bare ground and the surface with roofs and trees. At one place, h = H + N, and its height above local sea is H minus the offset.](docs/vertical-datums.svg)
+
+A projected sea level is a height above the **1995–2014 local mean sea level**. An open terrain model gives a height
+above a **geoid**. Comparing the two needs the offset between that geoid and local mean sea level at Manila, which can
+be tens of centimetres to more than a metre.
+
+**Open terrain models:**
+
+| Model | Heights measured from | Licence | The surface |
+| --- | --- | --- | --- |
+| DeltaDTM v1.1 ([data record](https://data.4tu.nl/datasets/1da2e70f-6c4d-4b03-86bd-b53e789cc629), doi:10.4121/21997565) | Not stated in its data record; EGM2008 is likely, an inference | CC BY 4.0 | Bare ground, made for low coasts; stated error about 0.43 m |
+| Copernicus DEM GLO-30 | EGM2008 geoid | Free, credited "© DLR e.V." | Roofs and trees included |
+| NASADEM | EGM96 geoid | NASA data, any use; its archive asks for a login | Roofs and trees included, from 2000 radar |
+| FABDEM | EGM2008, by one secondary source | CC BY-NC-SA 4.0: non-commercial | Bare ground |
+
+**The geoid-to-sea-level offset:**
+
+| Source | What it gives | Open? |
+| --- | --- | --- |
+| PGM2018, NAMRIA's Philippine geoid ([ISG](https://isgeoid.polimi.it/Geoid/Asia/Philippines/philippines18_g.html)) | A geoid fitted to the Philippine datum; its difference from EGM2008 would be the offset | Served without sign-in; **no licence stated** |
+| DTU22MDT, DTU Space (doi:10.11583/DTU.26947894) | The mean sea surface above a geoid, 1993–2012 | Licence not confirmed |
+| CNES-CLS22, AVISO+ | The same, 1993–2012 | Needs an account and a licence agreement: not open |
+
+**Not established:** DeltaDTM's datum (its methods paper was not read); PGM2018's licence; the correction from the
+Philippine datum's epoch to 1995–2014; whether a levelled tide gauge at Manila gives the offset directly. Until the
+datum and the offset are both sourced, nothing here can say that a place lies below a projected sea level.
 
 ## Source, terms and credit
 

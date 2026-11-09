@@ -85,43 +85,42 @@
      "dialog": "Choose your study area"
     },
     {
-     "note": "194 named hospitals and clinics in the box, as OpenStreetMap records them (ODbL). Not a register and not complete: an absence is not evidence of absence."
+     "note": "The named hospitals and clinics in the box, as OpenStreetMap records them, found with Find health facilities from the Humanitarian OpenStreetMap Team’s Philippines export (ODbL). Not a register and not complete: an absence is not evidence of absence."
     },
     {
-     "add": "point_input",
+     "add": "find_health_facilities",
      "as": "facilities"
+    },
+    {
+     "connect": {
+      "from": "area",
+      "to": "facilities",
+      "port": "area"
+     }
     },
     {
      "select": "facilities"
     },
     {
-     "click": "#edit-input-data",
-     "label": "Prepare input data",
-     "opens": "Input data"
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Find health facilities"
     },
     {
-     "choose": "input-mode",
-     "label": "Input method",
-     "value": "geojson",
-     "shown": "Import GeoJSON"
+     "choose": "hf-source",
+     "label": "Source",
+     "value": "hdx-hot-export",
+     "shown": "HDX country export",
+     "dialog": "Find health facilities"
     },
     {
-     "file": "input-file",
-     "label": "Local file · 5 MB maximum",
-     "path": "data/manila-health-facilities.geojson"
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Find health facilities"
     },
     {
-     "click": "#input-apply",
-     "label": "Save Edits"
-    },
-    {
-     "fill": "source-label",
-     "label": "Source label",
-     "value": "Manila health facilities"
-    },
-    {
-     "click": "[data-label-form=\"source-label\"] button",
-     "label": "Apply label"
+     "click": "#hf-retrieve",
+     "label": "Retrieve facilities"
     },
     {
      "note": "The eight Philippine tide gauges the projections cover."
@@ -308,40 +307,39 @@
      "dialog": "Choose your study area"
     },
     {
-     "add": "point_input",
+     "add": "find_health_facilities",
      "as": "facilities"
+    },
+    {
+     "connect": {
+      "from": "area",
+      "to": "facilities",
+      "port": "area"
+     }
     },
     {
      "select": "facilities"
     },
     {
-     "click": "#edit-input-data",
-     "label": "Prepare input data",
-     "opens": "Input data"
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Find health facilities"
     },
     {
-     "choose": "input-mode",
-     "label": "Input method",
-     "value": "geojson",
-     "shown": "Import GeoJSON"
+     "choose": "hf-source",
+     "label": "Source",
+     "value": "hdx-hot-export",
+     "shown": "HDX country export",
+     "dialog": "Find health facilities"
     },
     {
-     "file": "input-file",
-     "label": "Local file · 5 MB maximum",
-     "path": "data/manila-health-facilities.geojson"
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Find health facilities"
     },
     {
-     "click": "#input-apply",
-     "label": "Save Edits"
-    },
-    {
-     "fill": "source-label",
-     "label": "Source label",
-     "value": "Manila health facilities"
-    },
-    {
-     "click": "[data-label-form=\"source-label\"] button",
-     "label": "Apply label"
+     "click": "#hf-retrieve",
+     "label": "Retrieve facilities"
     },
     {
      "add": "point_input",
@@ -963,7 +961,7 @@
     {
      "fill": "note-text",
      "label": "The note",
-     "value": "**Facilities.** 194 named hospitals (17) and clinics (177) from OpenStreetMap, retrieved on 2026-10-10 from the Humanitarian OpenStreetMap Team’s Philippines export and kept where they fall in a box over coastal Manila, 120.93° to 121.05° E and 14.52° to 14.68° N. © OpenStreetMap contributors, Open Database License 1.0. OpenStreetMap states no completeness, so this is what is mapped, not a register."
+     "value": "**Facilities.** 194 named hospitals (17) and clinics (177) from OpenStreetMap, found with Find health facilities in the Humanitarian OpenStreetMap Team’s Philippines export (rebuilt 2026-05-05) and kept where they fall in a box over coastal Manila, 120.93° to 121.05° E and 14.52° to 14.68° N. © OpenStreetMap contributors, Open Database License 1.0. OpenStreetMap states no completeness, so this is what is mapped, not a register."
     },
     {
      "choose": "note-function",

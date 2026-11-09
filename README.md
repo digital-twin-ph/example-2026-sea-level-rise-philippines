@@ -14,7 +14,6 @@ measured from the same surface, and this repository holds neither. See [What thi
 | --- | --- |
 | `data/ar6-projections-philippine-gauges.csv` | 288 projections: 8 gauges × 3 scenarios × with and without vertical land motion × 2050 and 2100 × 3 quantiles, in millimetres |
 | `data/ar6-projection-sites.geojson` | The 8 tide gauges, with `site_id` and `name` |
-| `data/manila-health-facilities.geojson` | 194 named hospitals and clinics from OpenStreetMap, inside the study area |
 | `data/manila-study-area.geojson` | The study area: a box over coastal Manila, 120.93° to 121.05° E, 14.52° to 14.68° N |
 | `docs/vertical-datums.svg` | The heights a flood question would need, and how they relate. Not to scale |
 
@@ -37,10 +36,11 @@ At Manila's gauge (145), by 2100 under SSP2-4.5, the middle projection is 1,124 
 
 ### The facilities
 
-What OpenStreetMap records, not a facility register, and not complete. An absence here is not evidence of absence on
-the ground. Retrieved on 2026-10-10 by Fieldwork's **Find health facilities** from the Humanitarian OpenStreetMap
-Team's Philippines export (`hotosm_phl_health_facilities_points_geojson.geojson`, 452,007 bytes), kinds hospital and
-clinic, named, clipped to the study area: 194 kept. **Find health facilities** retrieves them again, live.
+Not a file here: each workflow finds them with Fieldwork's **Find health facilities**, from the Humanitarian
+OpenStreetMap Team's Philippines export (`hotosm_phl_health_facilities_points_geojson.zip`, 452,007 bytes, rebuilt
+2026-05-05), keeping named hospitals and clinics inside the study area: 194. What OpenStreetMap records, not a facility
+register, and not complete: an absence is not evidence of absence on the ground. The export is rebuilt from time to
+time, so a later retrieval may find a different number; the project records when it retrieved and what it kept.
 
 ## Workflows
 
@@ -124,8 +124,8 @@ gauges by `validation-lab/scripts/extract_ar6_philippines.py`; values unchanged.
 
 **Health facilities:** © OpenStreetMap contributors, prepared by the Humanitarian OpenStreetMap Team. Open Database
 License (ODbL) 1.0, [openstreetmap.org/copyright](https://www.openstreetmap.org/copyright).
-`data/manila-health-facilities.geojson` is a database derived from it and is offered under the ODbL. It was changed
-from the source: kinds other than hospital and clinic, unnamed facilities and those outside the study area left out.
+The project file holds the facilities its workflows retrieved, a database derived from it and offered under the ODbL:
+kinds other than hospital and clinic, unnamed facilities and those outside the study area left out.
 
 **Study area, diagram, manual and scripts:** the Fieldwork project, [digital-twin-ph](https://github.com/digital-twin-ph).
 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/), no rights reserved, as in the rulesets example.

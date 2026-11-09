@@ -25,7 +25,17 @@ const steps={
     {click:'#input-apply',label:'Save Edits'},
     {fill:'source-label',label:'Source label',value:label},
     {click:'[data-label-form="source-label"] button',label:'Apply label'}],
-  // THE STUDY AREA, the box the facilities were retrieved in, from its file.
+  // THE FACILITIES, AS A PERSON FINDS THEM: Find health facilities, the Humanitarian OpenStreetMap Team's country
+  // export, kept where they fall in the study area. Hospitals and clinics with a name are its defaults.
+  findFacilities:(as,area)=>[
+    {add:'find_health_facilities',as},
+    {connect:{from:area,to:as,port:'area'}},
+    {select:as},
+    {click:'#configure-step',label:'Configure…',opens:'Find health facilities'},
+    {choose:'hf-source',label:'Source',value:'hdx-hot-export',shown:'HDX country export',dialog:'Find health facilities'},
+    {click:'#config-apply',label:'Apply',dialog:'Find health facilities'},
+    {click:'#hf-retrieve',label:'Retrieve facilities'}],
+  // THE STUDY AREA, a box over coastal Manila, from its file.
   area:as=>[
     {add:'study_area',as},{select:as},
     {click:'#edit-study-area',label:'Select area on map',opens:'Choose your study area'},
@@ -114,7 +124,7 @@ const WRITE_UP=[
   {section:'Methods',fn:'source',words:'points',argument:'reports',works:[WORKS.ar6data,WORKS.facts],
     text:'**Projections.** IPCC AR6 Sea Level Projections, version 20210809, medium confidence, extracted for the eight Philippine sites that are tide gauges: 288 values, for SSP1-2.6, SSP2-4.5 and SSP5-8.5, with and without vertical land motion, for 2050 and 2100, at the 0.17, 0.5 and 0.83 levels, in millimetres above the 1995–2014 mean. The middle level is reported as the median and the outer two as the likely range.'},
   {section:'Methods',fn:'source',
-    text:'**Facilities.** 194 named hospitals (17) and clinics (177) from OpenStreetMap, retrieved on 2026-10-10 from the Humanitarian OpenStreetMap Team’s Philippines export and kept where they fall in a box over coastal Manila, 120.93° to 121.05° E and 14.52° to 14.68° N. © OpenStreetMap contributors, Open Database License 1.0. OpenStreetMap states no completeness, so this is what is mapped, not a register.'},
+    text:'**Facilities.** 194 named hospitals (17) and clinics (177) from OpenStreetMap, found with Find health facilities in the Humanitarian OpenStreetMap Team’s Philippines export (rebuilt 2026-05-05) and kept where they fall in a box over coastal Manila, 120.93° to 121.05° E and 14.52° to 14.68° N. © OpenStreetMap contributors, Open Database License 1.0. OpenStreetMap states no completeness, so this is what is mapped, not a register.'},
   {section:'Methods',fn:'method',
     text:'**Nearest gauge and its projection.** Each facility’s nearest gauge, and the great-circle distance to it on a sphere of 6,371.0088 km, came from Measure distance. Select rows narrowed the projections to one scenario, SSP2-4.5; one family, with vertical land motion; one year, 2100; and the median. Relate then brought that value beside each facility, matching its nearest gauge to the projections’ site.'},
   {section:'Methods',fn:'rationale',
@@ -141,8 +151,8 @@ workflows.push({name:'Which tide gauge’s projection applies to each facility, 
   ...steps.name('Which tide gauge’s projection applies to each facility, and how far is it?'),
   {note:'A published sea-level projection is for a tide gauge, not for every place. Before reading one for a facility, find which gauge it is nearest and how far away that is.'},
   ...steps.area('area'),
-  {note:'194 named hospitals and clinics in the box, as OpenStreetMap records them (ODbL). Not a register and not complete: an absence is not evidence of absence.'},
-  ...steps.points('facilities','data/manila-health-facilities.geojson','Manila health facilities'),
+  {note:'The named hospitals and clinics in the box, as OpenStreetMap records them, found with Find health facilities from the Humanitarian OpenStreetMap Team’s Philippines export (ODbL). Not a register and not complete: an absence is not evidence of absence.'},
+  ...steps.findFacilities('facilities','area'),
   {note:'The eight Philippine tide gauges the projections cover.'},
   ...steps.points('sites','data/ar6-projection-sites.geojson','AR6 projection sites'),
   {note:'Find each facility’s nearest gauge and how far it is. Every one of the eight has projections.'},
@@ -167,7 +177,7 @@ workflows.push({name:'How much is sea level projected to rise at each facility�
   ...steps.name('How much is sea level projected to rise at each facility’s gauge by 2100?'),
   {note:'The same facilities, gauges and projections. Then one projection for each gauge, so it can be brought beside each facility.'},
   ...steps.area('area'),
-  ...steps.points('facilities','data/manila-health-facilities.geojson','Manila health facilities'),
+  ...steps.findFacilities('facilities','area'),
   ...steps.points('sites','data/ar6-projection-sites.geojson','AR6 projection sites'),
   ...steps.nearest('nearest',{points:'facilities',sites:'sites'}),
   {note:'The projections, in millimetres above the 1995–2014 average.'},

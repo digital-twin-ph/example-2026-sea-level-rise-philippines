@@ -1011,6 +1011,121 @@
      "label": "Add note"
     },
     {
+     "click": "[data-add-note=\"Methods\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "**Three heights in one frame.** The ground under each facility is DeltaDTM’s bare ground above EGM2008, about 30 m cells, the cell containing the facility. Local mean sea level comes from the gauge: DTU25MSS, the 1993–2012 mean sea surface above the ellipsoid, less EGM2008’s height there, both read between the four nearest cells, plus 0.037 m, by which the gauge’s own record puts 1995–2014 above 1993–2012. Ground above the AR6 baseline is the ground less that sea level, and the published ruleset *Compare a projected rise with an elevation* sets the rise against it. No national datum is used."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "method"
+    },
+    {
+     "choose": "note-words",
+     "label": "Whose words?",
+     "value": "points"
+    },
+    {
+     "choose": "note-argument",
+     "label": "Whose argument?",
+     "value": "reports"
+    },
+    {
+     "click": "[data-note-tab=\"cite\"]",
+     "label": "Citations"
+    },
+    {
+     "choose": "cite-type",
+     "label": "Kind of work",
+     "value": "article"
+    },
+    {
+     "fill": "cite-authors",
+     "label": "Authors, one per line",
+     "value": "Pronk, Maarten"
+    },
+    {
+     "click": "label:has(#cite-et-al)",
+     "label": "The work names more authors than these (et al.)"
+    },
+    {
+     "fill": "cite-title",
+     "label": "Title",
+     "value": "DeltaDTM: A global coastal digital terrain model"
+    },
+    {
+     "fill": "cite-published",
+     "label": "Published",
+     "value": "2024"
+    },
+    {
+     "fill": "cite-container",
+     "label": "Journal or containing work",
+     "value": "Scientific Data"
+    },
+    {
+     "fill": "cite-volume",
+     "label": "Volume",
+     "value": "11"
+    },
+    {
+     "fill": "cite-pages",
+     "label": "Pages",
+     "value": "273"
+    },
+    {
+     "fill": "cite-doi",
+     "label": "DOI",
+     "value": "10.1038/s41597-024-03091-9"
+    },
+    {
+     "click": "#cite-add",
+     "label": "Add citation"
+    },
+    {
+     "choose": "cite-type",
+     "label": "Kind of work",
+     "value": "dataset"
+    },
+    {
+     "fill": "cite-authors",
+     "label": "Authors, one per line",
+     "value": "Andersen, Ole Baltazar\nNilsson, Bjarke"
+    },
+    {
+     "fill": "cite-title",
+     "label": "Title",
+     "value": "DTU25MSS Mean Sea Surface"
+    },
+    {
+     "fill": "cite-published",
+     "label": "Published",
+     "value": "2025"
+    },
+    {
+     "fill": "cite-publisher",
+     "label": "Publisher",
+     "value": "Technical University of Denmark"
+    },
+    {
+     "fill": "cite-doi",
+     "label": "DOI",
+     "value": "10.11583/DTU.29412275"
+    },
+    {
+     "click": "#cite-add",
+     "label": "Add citation"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
      "click": "[data-add-note=\"Results\"]",
      "view": "notes",
      "label": "note"
@@ -1038,6 +1153,25 @@
      "fill": "note-text",
      "label": "The note",
      "value": "By 2100 under SSP2-4.5, relative sea level at the Manila gauge is projected to rise 1,124 mm above the 1995–2014 mean (likely range 963 to 1,366 mm), including vertical land motion. Without it, the same projection is 602 mm (442 to 841 mm), so the land’s motion accounts for about 520 mm of the median."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "finding"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Results\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "At the Manila gauge, local mean sea level of 1995–2014 stands 0.94 m above EGM2008. On that reckoning 16 of the 194 facilities stand on ground below the mean sea level projected for 2100 (SSP2-4.5, median, with vertical land motion). None stands below today’s."
     },
     {
      "choose": "note-function",
@@ -1123,7 +1257,7 @@
     {
      "fill": "note-text",
      "label": "The note",
-     "value": "**Not a flood map.** A rise at a gauge does not say which ground it would reach: that needs the ground’s height and the local sea’s, measured from the same surface. At the Manila gauge, EGM2008, which DeltaDTM and other open terrain models measure from, and NAMRIA’s gravimetric geoid agree within 2 mm (43.009 and 43.011 m above the ellipsoid), and NAMRIA’s geoid fitted to mean sea level stands 0.85 m above both, within about 10 cm. Which years that mean sea level stands for is not stated by NAMRIA, and it matters: the gauge’s 1995–2014 mean, the AR6 baseline, stands 104 to 757 mm above the means of earlier 19-year periods. No facility is said to lie below a projected sea level."
+     "value": "**Not a flood map.** The 16 are a comparison of three numbers, not a flood: no seawall, drain, pump or connection to the sea is in it, and DeltaDTM’s mean absolute error, 0.45 m, is a third of the rise, so facilities near the line could fall either side. Measuring the ground and the sea from one surface needed care. At the Manila gauge, EGM2008, which DeltaDTM and other open terrain models measure from, and NAMRIA’s gravimetric geoid agree within 2 mm (43.009 and 43.011 m above the ellipsoid), and NAMRIA’s geoid fitted to mean sea level stands 0.85 m above both, within about 10 cm. Which years that mean sea level stands for is not stated by NAMRIA, and it matters: the gauge’s 1995–2014 mean, the AR6 baseline, stands 104 to 757 mm above the means of earlier 19-year periods. No facility is said to lie below a projected sea level."
     },
     {
      "choose": "note-function",
@@ -1268,6 +1402,952 @@
      "see": "eleven authored notes across the four parts, and References listing the five works cited",
      "within": ".notes-part[data-section=\"References\"]",
      "check": "Kopp"
+    }
+   ]
+  },
+  {
+   "name": "Which facilities stand on ground below the sea level projected for 2100?",
+   "steps": [
+    {
+     "click": "#add-workflow",
+     "label": "Add workflow",
+     "view": "workflow"
+    },
+    {
+     "fill": "workflow-name-edit",
+     "view": "project",
+     "label": "This workflow’s name — the question it answers",
+     "value": "Which facilities stand on ground below the sea level projected for 2100?"
+    },
+    {
+     "note": "Three heights, measured from one surface: the ground under each facility, the sea it is set against, and the projected rise. This is a comparison of numbers, not a flood model: no seawall, drain, pump or connection to the sea is in it."
+    },
+    {
+     "add": "study_area",
+     "as": "area"
+    },
+    {
+     "select": "area"
+    },
+    {
+     "click": "#edit-study-area",
+     "label": "Select area on map",
+     "opens": "Choose your study area"
+    },
+    {
+     "click": "#area-file-source summary",
+     "label": "Use a boundary file you already have",
+     "dialog": "Choose your study area"
+    },
+    {
+     "fill": "area-file-name-key",
+     "label": "Property holding each boundary’s name",
+     "value": "name",
+     "dialog": "Choose your study area"
+    },
+    {
+     "file": "area-file-input",
+     "label": "Choose a GeoJSON file…",
+     "path": "data/manila-study-area.geojson",
+     "dialog": "Choose your study area"
+    },
+    {
+     "pick": "area-boundary-pick",
+     "label": "Units",
+     "values": [
+      "Manila coastal study area"
+     ],
+     "dialog": "Choose your study area"
+    },
+    {
+     "click": "#area-boundary-use",
+     "label": "Use the selected units",
+     "dialog": "Choose your study area"
+    },
+    {
+     "click": "#area-apply",
+     "label": "Apply study area",
+     "dialog": "Choose your study area"
+    },
+    {
+     "add": "find_health_facilities",
+     "as": "facilities"
+    },
+    {
+     "connect": {
+      "from": "area",
+      "to": "facilities",
+      "port": "area"
+     }
+    },
+    {
+     "select": "facilities"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Find health facilities"
+    },
+    {
+     "choose": "hf-source",
+     "label": "Source",
+     "value": "hdx-hot-export",
+     "shown": "HDX country export",
+     "dialog": "Find health facilities"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Find health facilities"
+    },
+    {
+     "click": "#hf-retrieve",
+     "label": "Retrieve facilities"
+    },
+    {
+     "add": "point_input",
+     "as": "sites"
+    },
+    {
+     "select": "sites"
+    },
+    {
+     "click": "#edit-input-data",
+     "label": "Prepare input data",
+     "opens": "Input data"
+    },
+    {
+     "choose": "input-mode",
+     "label": "Input method",
+     "value": "geojson",
+     "shown": "Import GeoJSON"
+    },
+    {
+     "file": "input-file",
+     "label": "Local file · 5 MB maximum",
+     "path": "data/ar6-projection-sites.geojson"
+    },
+    {
+     "click": "#input-apply",
+     "label": "Save Edits"
+    },
+    {
+     "fill": "source-label",
+     "label": "Source label",
+     "value": "AR6 projection sites"
+    },
+    {
+     "click": "[data-label-form=\"source-label\"] button",
+     "label": "Apply label"
+    },
+    {
+     "note": "The geoid, EGM2008, read where PROJ publishes it: only the window around the study area is fetched. Its values sit at grid nodes, and it says so."
+    },
+    {
+     "add": "raster_input",
+     "as": "egm"
+    },
+    {
+     "connect": {
+      "from": "area",
+      "to": "egm",
+      "port": "area"
+     }
+    },
+    {
+     "select": "egm"
+    },
+    {
+     "click": "#prepare-raster",
+     "label": "Configure…"
+    },
+    {
+     "click": "#raster-url-source summary",
+     "label": "Or a GeoTIFF at a URL"
+    },
+    {
+     "fill": "raster-url",
+     "label": "URL of a GeoTIFF",
+     "value": "https://cdn.proj.org/us_nga_egm08_25.tif"
+    },
+    {
+     "click": "#raster-url-read",
+     "label": "Read"
+    },
+    {
+     "choose": "raster-padding",
+     "label": "Extra source coverage (when preparing a file)",
+     "value": "1"
+    },
+    {
+     "click": "#raster-save",
+     "label": "Save raster window"
+    },
+    {
+     "note": "The mean sea surface of 1993–2012, DTU25MSS, from the subset in this repository: DTU’s server lets no browser read the whole file in parts. Download the whole file from DTU instead and choose it here, if you prefer."
+    },
+    {
+     "add": "raster_input",
+     "as": "mss"
+    },
+    {
+     "connect": {
+      "from": "area",
+      "to": "mss",
+      "port": "area"
+     }
+    },
+    {
+     "select": "mss"
+    },
+    {
+     "click": "#prepare-raster",
+     "label": "Configure…"
+    },
+    {
+     "file": "raster-file",
+     "label": "GeoTIFF file",
+     "path": "data/dtu25mss-manila.tif"
+    },
+    {
+     "choose": "raster-padding",
+     "label": "Extra source coverage (when preparing a file)",
+     "value": "1"
+    },
+    {
+     "click": "#raster-save",
+     "label": "Save raster window"
+    },
+    {
+     "note": "The ground, DeltaDTM, from the subset in this repository: bare ground above EGM2008, about 30 m cells, a mean absolute error of 0.45 m. A value of 30 is its ceiling, above its range."
+    },
+    {
+     "add": "raster_input",
+     "as": "ground"
+    },
+    {
+     "connect": {
+      "from": "area",
+      "to": "ground",
+      "port": "area"
+     }
+    },
+    {
+     "select": "ground"
+    },
+    {
+     "click": "#prepare-raster",
+     "label": "Configure…"
+    },
+    {
+     "file": "raster-file",
+     "label": "GeoTIFF file",
+     "path": "data/deltadtm-manila.tif"
+    },
+    {
+     "choose": "raster-padding",
+     "label": "Extra source coverage (when preparing a file)",
+     "value": "1"
+    },
+    {
+     "click": "#raster-save",
+     "label": "Save raster window"
+    },
+    {
+     "note": "At the gauges: the geoid and the sea surface, each read between the four nearest cells, as PROJ reads a geoid."
+    },
+    {
+     "add": "sample_raster",
+     "as": "gaugeGeoid"
+    },
+    {
+     "connect": {
+      "from": "sites",
+      "to": "gaugeGeoid",
+      "port": "points"
+     }
+    },
+    {
+     "connect": {
+      "from": "egm",
+      "to": "gaugeGeoid",
+      "port": "raster"
+     }
+    },
+    {
+     "select": "gaugeGeoid"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Sample raster at points"
+    },
+    {
+     "fill": "sample-attribute",
+     "label": "Attribute to write",
+     "value": "egm2008_m",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "fill": "sample-unit",
+     "label": "What those values measure",
+     "value": "metres above the WGS84 ellipsoid",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "choose": "sample-method",
+     "label": "Read each value as",
+     "value": "bilinear",
+     "shown": "between the four nearest cells",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "add": "sample_raster",
+     "as": "gaugeSea"
+    },
+    {
+     "connect": {
+      "from": "gaugeGeoid",
+      "to": "gaugeSea",
+      "port": "points"
+     }
+    },
+    {
+     "connect": {
+      "from": "mss",
+      "to": "gaugeSea",
+      "port": "raster"
+     }
+    },
+    {
+     "select": "gaugeSea"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Sample raster at points"
+    },
+    {
+     "fill": "sample-attribute",
+     "label": "Attribute to write",
+     "value": "mss_m",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "fill": "sample-unit",
+     "label": "What those values measure",
+     "value": "metres above the WGS84 ellipsoid, 1993–2012",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "choose": "sample-method",
+     "label": "Read each value as",
+     "value": "bilinear",
+     "shown": "between the four nearest cells",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "note": "At the facilities: the ground, the cell containing each."
+    },
+    {
+     "add": "sample_raster",
+     "as": "facilityGround"
+    },
+    {
+     "connect": {
+      "from": "facilities",
+      "to": "facilityGround",
+      "port": "points"
+     }
+    },
+    {
+     "connect": {
+      "from": "ground",
+      "to": "facilityGround",
+      "port": "raster"
+     }
+    },
+    {
+     "select": "facilityGround"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Sample raster at points"
+    },
+    {
+     "fill": "sample-attribute",
+     "label": "Attribute to write",
+     "value": "ground_m",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "fill": "sample-unit",
+     "label": "What those values measure",
+     "value": "metres above EGM2008",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Sample raster at points"
+    },
+    {
+     "note": "Each facility’s nearest gauge, carrying the gauge’s geoid and sea surface, and the facility’s ground."
+    },
+    {
+     "add": "measure_distance",
+     "as": "nearest"
+    },
+    {
+     "connect": {
+      "from": "facilityGround",
+      "to": "nearest",
+      "port": "points"
+     }
+    },
+    {
+     "connect": {
+      "from": "gaugeSea",
+      "to": "nearest",
+      "port": "candidates"
+     }
+    },
+    {
+     "note": "Show the distances in a table and run, so the rules can read their columns."
+    },
+    {
+     "add": "table_output",
+     "as": "table"
+    },
+    {
+     "connect": {
+      "from": "nearest",
+      "to": "table",
+      "port": "table"
+     }
+    },
+    {
+     "run": true
+    },
+    {
+     "note": "The arithmetic, written as rules. The sea surface above the geoid at the gauge is local sea level in the ground’s frame; the gauge’s own record puts 1995–2014, the AR6 baseline, 0.037 m above 1993–2012."
+    },
+    {
+     "add": "apply_ruleset",
+     "as": "height"
+    },
+    {
+     "select": "height"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Apply ruleset"
+    },
+    {
+     "choose": "ruleset-choice",
+     "label": "Ruleset",
+     "value": "authored",
+     "shown": "Write rules for this step",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "click": "#ruleset-config #config-apply",
+     "label": "Apply",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "choose": "ruleset-records",
+     "label": "Records arrive as",
+     "value": "table",
+     "shown": "A table",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "click": "#rule-editor #config-apply",
+     "label": "Apply",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "connect": {
+      "from": "nearest",
+      "to": "height",
+      "port": "subjects"
+     }
+    },
+    {
+     "select": "height"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Apply ruleset"
+    },
+    {
+     "fill": "[aria-label=\"Unit for point_ground_m\"]",
+     "label": "Unit for point_ground_m",
+     "value": "metres",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "fill": "[aria-label=\"Unit for nearest_egm2008_m\"]",
+     "label": "Unit for nearest_egm2008_m",
+     "value": "metres",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "fill": "[aria-label=\"Unit for nearest_mss_m\"]",
+     "label": "Unit for nearest_mss_m",
+     "value": "metres",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "click": "#rule-editor-add-every",
+     "label": "+ Add a value computed for every record"
+    },
+    {
+     "fill": "[data-rule=\"0\"][data-then=\"0\"][data-part=\"column\"]",
+     "label": "New column",
+     "value": "sea_above_geoid_m"
+    },
+    {
+     "choose": "[data-rule=\"0\"][data-then=\"0\"][data-part=\"left-source\"]",
+     "label": "First value",
+     "value": "fwa:nearestMssM",
+     "shown": "nearest_mss_m"
+    },
+    {
+     "choose": "[data-rule=\"0\"][data-then=\"0\"][data-part=\"operator\"]",
+     "label": "Operation",
+     "value": "minus"
+    },
+    {
+     "choose": "[data-rule=\"0\"][data-then=\"0\"][data-part=\"right-source\"]",
+     "label": "Second value",
+     "value": "fwa:nearestEgm2008M",
+     "shown": "nearest_egm2008_m"
+    },
+    {
+     "fill": "[data-rule=\"0\"][data-then=\"0\"][data-part=\"unit\"]",
+     "label": "Unit of the new column",
+     "value": "metres"
+    },
+    {
+     "click": "#rule-editor-add-every",
+     "label": "+ Add a value computed for every record"
+    },
+    {
+     "fill": "[data-rule=\"1\"][data-then=\"0\"][data-part=\"column\"]",
+     "label": "New column",
+     "value": "above_1993_2012_m"
+    },
+    {
+     "choose": "[data-rule=\"1\"][data-then=\"0\"][data-part=\"left-source\"]",
+     "label": "First value",
+     "value": "fwa:pointGroundM",
+     "shown": "point_ground_m"
+    },
+    {
+     "choose": "[data-rule=\"1\"][data-then=\"0\"][data-part=\"operator\"]",
+     "label": "Operation",
+     "value": "minus"
+    },
+    {
+     "choose": "[data-rule=\"1\"][data-then=\"0\"][data-part=\"right-source\"]",
+     "label": "Second value",
+     "value": "fwa:c_sea_above_geoid_m",
+     "shown": "sea_above_geoid_m"
+    },
+    {
+     "fill": "[data-rule=\"1\"][data-then=\"0\"][data-part=\"unit\"]",
+     "label": "Unit of the new column",
+     "value": "metres"
+    },
+    {
+     "click": "#rule-editor-add-every",
+     "label": "+ Add a value computed for every record"
+    },
+    {
+     "fill": "[data-rule=\"2\"][data-then=\"0\"][data-part=\"column\"]",
+     "label": "New column",
+     "value": "elevation_m"
+    },
+    {
+     "choose": "[data-rule=\"2\"][data-then=\"0\"][data-part=\"left-source\"]",
+     "label": "First value",
+     "value": "fwa:c_above_1993_2012_m",
+     "shown": "above_1993_2012_m"
+    },
+    {
+     "choose": "[data-rule=\"2\"][data-then=\"0\"][data-part=\"operator\"]",
+     "label": "Operation",
+     "value": "minus"
+    },
+    {
+     "choose": "[data-rule=\"2\"][data-then=\"0\"][data-part=\"right-source\"]",
+     "label": "Second value",
+     "value": "",
+     "shown": "a number"
+    },
+    {
+     "fill": "[data-rule=\"2\"][data-then=\"0\"][data-part=\"right-number\"]",
+     "label": "Second number",
+     "value": "0.037"
+    },
+    {
+     "fill": "[data-rule=\"2\"][data-then=\"0\"][data-part=\"unit\"]",
+     "label": "Unit of the new column",
+     "value": "metres"
+    },
+    {
+     "click": "#rule-editor #config-apply",
+     "label": "Apply",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "note": "The projected rise at each facility’s gauge, as in the second workflow."
+    },
+    {
+     "add": "table_input",
+     "as": "projections"
+    },
+    {
+     "select": "projections"
+    },
+    {
+     "click": "#open-table",
+     "label": "Configure…",
+     "opens": "Tabular data"
+    },
+    {
+     "click": "#table-remote summary",
+     "label": "Or fetch from a URL",
+     "dialog": "Tabular data"
+    },
+    {
+     "fill": "table-url",
+     "label": "URL of a CSV, Stata file or zip",
+     "value": "https://raw.githubusercontent.com/digital-twin-ph/example-2026-sea-level-rise-philippines/c9389886237d9c7885dc82d6cbefcf0fbb2fdfdc/data/ar6-projections-philippine-gauges.csv",
+     "dialog": "Tabular data"
+    },
+    {
+     "click": "#table-fetch",
+     "label": "Fetch",
+     "dialog": "Tabular data"
+    },
+    {
+     "choose": "table-shape",
+     "label": "Shape of the file",
+     "value": "long",
+     "shown": "Long",
+     "dialog": "Tabular data"
+    },
+    {
+     "choose": "table-value",
+     "label": "Value column",
+     "value": "value_mm",
+     "dialog": "Tabular data"
+    },
+    {
+     "tick": "table-keys",
+     "label": "Key columns",
+     "values": [
+      "site_id",
+      "scenario",
+      "basis",
+      "family",
+      "year",
+      "quantile"
+     ],
+     "dialog": "Tabular data"
+    },
+    {
+     "fill": "table-unit",
+     "label": "Unit of the value (entered by you)",
+     "value": "millimetre",
+     "dialog": "Tabular data"
+    },
+    {
+     "click": "#table-save",
+     "label": "Apply",
+     "dialog": "Tabular data"
+    },
+    {
+     "add": "apply_ruleset",
+     "as": "extract"
+    },
+    {
+     "select": "extract"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Apply ruleset"
+    },
+    {
+     "choose": "ruleset-choice",
+     "label": "Ruleset",
+     "value": "urn:fieldwork:ruleset:extract-contract@1.0.0",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "click": "#ruleset-config #config-apply",
+     "label": "Apply",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "connect": {
+      "from": "projections",
+      "to": "extract",
+      "port": "projections"
+     }
+    },
+    {
+     "add": "select_rows",
+     "as": "scenario"
+    },
+    {
+     "connect": {
+      "from": "extract",
+      "to": "scenario",
+      "port": "records"
+     }
+    },
+    {
+     "select": "scenario"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Select rows by value"
+    },
+    {
+     "choose": "select-key",
+     "label": "Key column to choose by",
+     "value": "scenario",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "label:has([data-select-value=\"ssp245\"])",
+     "label": "ssp245",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Select rows by value"
+    },
+    {
+     "add": "select_rows",
+     "as": "family"
+    },
+    {
+     "connect": {
+      "from": "scenario",
+      "to": "family",
+      "port": "records"
+     }
+    },
+    {
+     "select": "family"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Select rows by value"
+    },
+    {
+     "choose": "select-key",
+     "label": "Key column to choose by",
+     "value": "family",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "label:has([data-select-value=\"with_vlm\"])",
+     "label": "with_vlm",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Select rows by value"
+    },
+    {
+     "add": "select_rows",
+     "as": "year"
+    },
+    {
+     "connect": {
+      "from": "family",
+      "to": "year",
+      "port": "records"
+     }
+    },
+    {
+     "select": "year"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Select rows by value"
+    },
+    {
+     "choose": "select-key",
+     "label": "Key column to choose by",
+     "value": "year",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "label:has([data-select-value=\"2100\"])",
+     "label": "2100",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Select rows by value"
+    },
+    {
+     "add": "select_rows",
+     "as": "median"
+    },
+    {
+     "connect": {
+      "from": "year",
+      "to": "median",
+      "port": "records"
+     }
+    },
+    {
+     "select": "median"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Select rows by value"
+    },
+    {
+     "choose": "select-key",
+     "label": "Key column to choose by",
+     "value": "quantile",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "label:has([data-select-value=\"0.5\"])",
+     "label": "0.5",
+     "dialog": "Select rows by value"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Select rows by value"
+    },
+    {
+     "add": "relate_table",
+     "as": "rise"
+    },
+    {
+     "connect": {
+      "from": "height",
+      "to": "rise",
+      "port": "records"
+     }
+    },
+    {
+     "connect": {
+      "from": "median",
+      "to": "rise",
+      "port": "related"
+     }
+    },
+    {
+     "select": "rise"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Relate a column from another table"
+    },
+    {
+     "choose": "relate-on",
+     "label": "Matched on, in the first table",
+     "value": "nearest_site_id",
+     "dialog": "Relate a column from another table"
+    },
+    {
+     "choose": "relate-right-on",
+     "label": "The same, in the second table",
+     "value": "site_id",
+     "dialog": "Relate a column from another table"
+    },
+    {
+     "choose": "relate-bring",
+     "label": "Bring across",
+     "value": "value_mm",
+     "dialog": "Relate a column from another table"
+    },
+    {
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Relate a column from another table"
+    },
+    {
+     "note": "The comparison, a published ruleset: the rise against the ground above the baseline. Equal counts as reaching; a missing value is Unknown."
+    },
+    {
+     "add": "apply_ruleset",
+     "as": "compare"
+    },
+    {
+     "select": "compare"
+    },
+    {
+     "click": "#configure-step",
+     "label": "Configure…",
+     "opens": "Apply ruleset"
+    },
+    {
+     "choose": "ruleset-choice",
+     "label": "Ruleset",
+     "value": "urn:fieldwork:ruleset:compare-level-to-elevation@1.0.0",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "click": "#ruleset-config #config-apply",
+     "label": "Apply",
+     "dialog": "Apply ruleset"
+    },
+    {
+     "connect": {
+      "from": "rise",
+      "to": "compare",
+      "port": "records"
+     }
+    },
+    {
+     "connect": {
+      "from": "compare",
+      "to": "table",
+      "port": "table"
+     }
+    },
+    {
+     "run": true
+    },
+    {
+     "see": "each facility with its ground above the AR6 baseline, the rise at its gauge, its margin and Reaches or StaysBelow",
+     "check": "Reaches"
     }
    ]
   }

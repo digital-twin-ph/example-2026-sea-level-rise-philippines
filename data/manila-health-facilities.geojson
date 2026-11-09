@@ -1,0 +1,3018 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "node-5004079922",
+   "properties": {
+    "name": "Water Cress",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0334175,
+     14.603106
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4614208591",
+   "properties": {
+    "name": "OurHealth Medical and Diagnostic Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9837494,
+     14.58222
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12823782897",
+   "properties": {
+    "name": "HopeMed Pediatric and Family Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0367267,
+     14.6766727
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4519922789",
+   "properties": {
+    "name": "1301st Dental Dispensary",
+    "kind": "clinic",
+    "speciality": "dentistry",
+    "city": "Taguig"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0375236,
+     14.5350917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7328676490",
+   "properties": {
+    "name": "The Medical City Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0206607,
+     14.6572151
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7039956885",
+   "properties": {
+    "name": "CBZ Medical Clinic",
+    "kind": "clinic",
+    "operator": "private",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9896783,
+     14.5780848
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7039957485",
+   "properties": {
+    "name": "Malabon Social Hygiene Clinic",
+    "kind": "clinic",
+    "operator": "government"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9623413,
+     14.6551417
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7880412218",
+   "properties": {
+    "name": "Javier's Ears, Nose, Throat",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0124605,
+     14.5818002
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6351453988",
+   "properties": {
+    "name": "Philippine Medical Tests System",
+    "kind": "hospital"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0246028,
+     14.6358797
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5377045523",
+   "properties": {
+    "name": "Bio millenium Diagnostic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9744868,
+     14.6082206
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-10154300433",
+   "properties": {
+    "name": "skinhouse",
+    "kind": "clinic",
+    "speciality": "dermatology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9956567,
+     14.6308474
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4322318190",
+   "properties": {
+    "name": "Godsend Maternity Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9753389,
+     14.6451758
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4614198991",
+   "properties": {
+    "name": "Miraculous Mother Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9828137,
+     14.6154285
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7126563686",
+   "properties": {
+    "name": "Bioscan Clinical Laboratory",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9825479,
+     14.643731
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6031834029",
+   "properties": {
+    "name": "Benavides Cancer Institute",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9904656,
+     14.6109077
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4406617206",
+   "properties": {
+    "name": "Supercare Medical Services",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.018824,
+     14.5608532
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1590273133",
+   "properties": {
+    "name": "RITM Satellite Clinic",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9910052,
+     14.5733749
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6011953702",
+   "properties": {
+    "name": "Ambulatory CPU Lingap Bata – UST Medical Social Service Dapartment",
+    "kind": "hospital",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.990071,
+     14.6115031
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-2575086721",
+   "properties": {
+    "name": "Medicard",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0396629,
+     14.6418454
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3909460063",
+   "properties": {
+    "name": "St. Stamford Clinic",
+    "kind": "clinic",
+    "city": "Makati"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0219892,
+     14.5559243
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6556682421",
+   "properties": {
+    "name": "Pimentel Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0137492,
+     14.5723875
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6556682426",
+   "properties": {
+    "name": "Lord's Grace Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0143299,
+     14.5720955
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4274875291",
+   "properties": {
+    "name": "Klinika sa Bantayog",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0390054,
+     14.6446883
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3198716917",
+   "properties": {
+    "name": "DOH Eye Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0477866,
+     14.642819
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6571842385",
+   "properties": {
+    "name": "Hi-Precision",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0462683,
+     14.6375012
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6581201132",
+   "properties": {
+    "name": "Makati Ilchim Oriental Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0322215,
+     14.5627551
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6568964452",
+   "properties": {
+    "name": "St. Camillus Polyclinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0083573,
+     14.5686189
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6914542985",
+   "properties": {
+    "name": "Terencio Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9743864,
+     14.6380812
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7039933087",
+   "properties": {
+    "name": "Calpe Medical Services and Supplies",
+    "kind": "clinic",
+    "operator": "private",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.98192,
+     14.5757476
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7328548086",
+   "properties": {
+    "name": "Mabuhay Chiropractor",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0348058,
+     14.5469588
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7303980773",
+   "properties": {
+    "name": "Mandaluyong Social Hygiene Clinic",
+    "kind": "clinic",
+    "operator": "government",
+    "city": "Mandaluyong"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0272896,
+     14.580147
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7564639005",
+   "properties": {
+    "name": "Rockford Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9794809,
+     14.6095039
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7355043129",
+   "properties": {
+    "name": "Kaiser Medical Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.013563,
+     14.5576905
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-8436497517",
+   "properties": {
+    "name": "E. Perlas Diagnostics & Polyclinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9837216,
+     14.6754122
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5109117922",
+   "properties": {
+    "name": "Philippine Orthopedic Institute",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0151211,
+     14.5586231
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4198257889",
+   "properties": {
+    "name": "Aventus",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0145111,
+     14.5579253
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11248508043",
+   "properties": {
+    "name": "Borough Medical Clinics",
+    "kind": "clinic",
+    "city": "Pasay"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9813649,
+     14.536568
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11248508047",
+   "properties": {
+    "name": "The Medical City Clinic",
+    "kind": "clinic",
+    "city": "Pasay"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9814249,
+     14.536567
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11248508044",
+   "properties": {
+    "name": "Borough Lasik Center",
+    "kind": "clinic",
+    "speciality": "ophthalmology",
+    "city": "Pasay"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.981399,
+     14.5365674
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11548142899",
+   "properties": {
+    "name": "The Medical City Clinic",
+    "kind": "clinic",
+    "city": "Makati City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0182246,
+     14.5419615
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4445659743",
+   "properties": {
+    "name": "A.C. Lim Polyclinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0239457,
+     14.5889239
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4445664435",
+   "properties": {
+    "name": "Animal Bite Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0239213,
+     14.5889615
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-944867878",
+   "properties": {
+    "name": "DermaClinic",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0018538,
+     14.6033182
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11997553916",
+   "properties": {
+    "name": "Nemis Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0171891,
+     14.6251436
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12832943731",
+   "properties": {
+    "name": "Babybond Ultrasound",
+    "kind": "clinic",
+    "speciality": "obstetric_ultrasonography",
+    "city": "Pasay"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9812753,
+     14.5364914
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4952302779",
+   "properties": {
+    "name": "Jacinto Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9812523,
+     14.637772
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12300577681",
+   "properties": {
+    "name": "CareView Cancer Center BGC",
+    "kind": "clinic",
+    "speciality": "diagnostic_radiology",
+    "city": "Taguig"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0441071,
+     14.5549341
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3736295048",
+   "properties": {
+    "name": "Citimed Polyclinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0043908,
+     14.6013091
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12968298120",
+   "properties": {
+    "name": "Guadahealth",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0451095,
+     14.5636406
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7328713485",
+   "properties": {
+    "name": "The Medical City Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0268806,
+     14.6569685
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7328713486",
+   "properties": {
+    "name": "The Medical City Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.034321,
+     14.6532175
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4491639392",
+   "properties": {
+    "name": "Marine medical and laboratory clinic inc.",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9934624,
+     14.5683398
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1268095743",
+   "properties": {
+    "name": "Nordic Medical Clinic Manila",
+    "kind": "clinic",
+    "operator": "private",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9847717,
+     14.5685771
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6525878404",
+   "properties": {
+    "name": "Burol Puericulture & Health Center",
+    "kind": "clinic",
+    "speciality": "general"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0274184,
+     14.5893149
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6554476250",
+   "properties": {
+    "name": "A.H. Lacson Health Center",
+    "kind": "clinic",
+    "speciality": "general"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0136184,
+     14.5808462
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4319070289",
+   "properties": {
+    "name": "Transglobal Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0087073,
+     14.5653672
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4454361389",
+   "properties": {
+    "name": "Polyhealth",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.947883,
+     14.6672259
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4916564521",
+   "properties": {
+    "name": "Perpetual Succor Maternity Hospital",
+    "kind": "hospital"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9923296,
+     14.6080998
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5323225505",
+   "properties": {
+    "name": "Philippine Kidney Dialysis Foundation",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0333245,
+     14.6320895
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11608235124",
+   "properties": {
+    "name": "Unlab Medical Clinic",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9873576,
+     14.5788701
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4443255689",
+   "properties": {
+    "name": "Smile Savers Dental Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9993744,
+     14.606074
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1750310911",
+   "properties": {
+    "name": "Barangay Bel-Air Health Office",
+    "kind": "clinic",
+    "city": "Makati"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0231265,
+     14.5604391
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-10127491575",
+   "properties": {
+    "name": "IOM Manila Health Centre",
+    "kind": "clinic",
+    "city": "Makati"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.026363,
+     14.5608686
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4351593528",
+   "properties": {
+    "name": "HQ",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0045707,
+     14.6266283
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6192293400",
+   "properties": {
+    "name": "The Medical City",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0180008,
+     14.6041571
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4624145989",
+   "properties": {
+    "name": "St.Peter-Paul Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9813189,
+     14.5792774
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11082277452",
+   "properties": {
+    "name": "Our Lady of Lourdes Hospital",
+    "kind": "hospital",
+    "speciality": "general"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0230978,
+     14.5947342
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6547550854",
+   "properties": {
+    "name": "Balza-Antonio Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.048062,
+     14.5815445
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7091739288",
+   "properties": {
+    "name": "Centerport Medical Services Inc.",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9787381,
+     14.579475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7091072287",
+   "properties": {
+    "name": "Angelus Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0179249,
+     14.5565711
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7328653085",
+   "properties": {
+    "name": "CliniKaya",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0463435,
+     14.5660041
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7154387721",
+   "properties": {
+    "name": "Health Port",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0031491,
+     14.5588818
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5563317021",
+   "properties": {
+    "name": "St. Martin Polyclinic. Inc",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9880553,
+     14.5781026
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7128430286",
+   "properties": {
+    "name": "K Line Laboratory",
+    "kind": "clinic",
+    "operator": "private"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9883091,
+     14.531391
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5800311853",
+   "properties": {
+    "name": "IHADS - International Health Aide Diagnostic Services Inc.",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9872386,
+     14.5784154
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-255052495",
+   "properties": {
+    "name": "Miraculous Medal Hospital",
+    "kind": "hospital",
+    "tagSource": "jklinc"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.992988,
+     14.553641
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-9969511817",
+   "properties": {
+    "name": "The Lord's Grace Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.985016,
+     14.5509576
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-255071671",
+   "properties": {
+    "name": "Tanchoco Clinic",
+    "kind": "hospital",
+    "tagSource": "jklinc"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.943161,
+     14.67563
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7328556685",
+   "properties": {
+    "name": "Minute Healcare",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0362692,
+     14.63813
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3638341022",
+   "properties": {
+    "name": "CAH Medical Clinic",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0016973,
+     14.6334038
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-8345260775",
+   "properties": {
+    "name": "P. Bernardo Health Center",
+    "kind": "clinic",
+    "operator": "government",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0466538,
+     14.6279988
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1157622554",
+   "properties": {
+    "name": "Westmed Diagnostic Clinic",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0293825,
+     14.653576
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-8740251771",
+   "properties": {
+    "name": "Medline Dialysis Center",
+    "kind": "clinic",
+    "speciality": "dialysis"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.031783,
+     14.6774104
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4175928492",
+   "properties": {
+    "name": "Cebu Health Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0070858,
+     14.6106645
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4373135292",
+   "properties": {
+    "name": "Likhaan",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0404882,
+     14.6631479
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7128774885",
+   "properties": {
+    "name": "Sto. Domingo Diagnostic and Medical Center Corp.",
+    "kind": "clinic",
+    "operator": "private"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0119716,
+     14.6273788
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12712993151",
+   "properties": {
+    "name": "Maxicare Primary Care Clinic",
+    "kind": "clinic",
+    "speciality": "psyc;pedia;internal;general;family;ophthalmology;paediatrics;dermatology;gynaecology;cardiology;surgery;psychiatry;nephrology;endocrinology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0448711,
+     14.5548439
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4430464489",
+   "properties": {
+    "name": "Windsor International Maritime Clinic, Inc.",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9739471,
+     14.5904904
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4177404041",
+   "properties": {
+    "name": "St. John of God",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9879385,
+     14.5989587
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7039898986",
+   "properties": {
+    "name": "St. Cecilia Polyclinic",
+    "kind": "clinic",
+    "operator": "private",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9804781,
+     14.5790697
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4614249389",
+   "properties": {
+    "name": "Medisense Diagnostic Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9809261,
+     14.5814756
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-255063024",
+   "properties": {
+    "name": "J. P. Sioson General Hospital And Colleges",
+    "kind": "hospital",
+    "city": "Quezon City",
+    "tagSource": "jklinc"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0250945,
+     14.6599034
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1627781284",
+   "properties": {
+    "name": "The Zen Insitute Medical Spa",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0361417,
+     14.6339559
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5045391444",
+   "properties": {
+    "name": "Skin Optima",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0385015,
+     14.6334341
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5085488325",
+   "properties": {
+    "name": "Life Change Recovery Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0402621,
+     14.633163
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7123860186",
+   "properties": {
+    "name": "Agoncillo Medical Clinic",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9912946,
+     14.5753298
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7129025485",
+   "properties": {
+    "name": "Icon Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0449838,
+     14.6034191
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5182908321",
+   "properties": {
+    "name": "JAPANESE Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0176171,
+     14.5613106
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4553695593",
+   "properties": {
+    "name": "Healthway Office",
+    "kind": "clinic",
+    "city": "Makati"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0177319,
+     14.5562878
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4911917702",
+   "properties": {
+    "name": "Corazon de Jesus Health Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0315058,
+     14.6066514
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5694600424",
+   "properties": {
+    "name": "Dr. Tuquero",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0139889,
+     14.5778046
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13055974772",
+   "properties": {
+    "name": "Venancio T. Campued Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0338041,
+     14.6768656
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-255051235",
+   "properties": {
+    "name": "UST Hospital Clinical Division",
+    "kind": "hospital",
+    "city": "Manila",
+    "tagSource": "GPS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9898193,
+     14.6122477
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3233877664",
+   "properties": {
+    "name": "Tomatis",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0437295,
+     14.5530709
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13064762386",
+   "properties": {
+    "name": "Hyperbaric Medicine Facility and Wound Center",
+    "kind": "clinic",
+    "speciality": "hyperbaric_chamber"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.04556,
+     14.64683
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3074418266",
+   "properties": {
+    "name": "St. Anne Orthopedic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0132327,
+     14.5807824
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11546812443",
+   "properties": {
+    "name": "New World Diagnostics",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9870525,
+     14.5786793
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1123066928",
+   "properties": {
+    "name": "Centralle Medical",
+    "kind": "clinic",
+    "speciality": "diagnostic_radiology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9845103,
+     14.6459906
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3101506622",
+   "properties": {
+    "name": "ABC Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9831199,
+     14.6264006
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7123670686",
+   "properties": {
+    "name": "San Juan City Social Hygiene Clinic",
+    "kind": "clinic",
+    "operator": "government",
+    "city": "San Juan"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0249169,
+     14.5983756
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7123658485",
+   "properties": {
+    "name": "Halcyon Marine HealthCare Systems",
+    "kind": "clinic",
+    "operator": "private"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0106644,
+     14.5575428
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-10056703061",
+   "properties": {
+    "name": "FPOP Community Healthcare Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0423238,
+     14.6762768
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1377329390",
+   "properties": {
+    "name": "St. Luke's Medical Center Extension Clinic",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9818473,
+     14.5791471
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13356065597",
+   "properties": {
+    "name": "Dialysis Center",
+    "kind": "clinic",
+    "speciality": "nephrology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9916659,
+     14.5451922
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-25389198",
+   "properties": {
+    "name": "Protacio Hospital",
+    "kind": "hospital"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9965839,
+     14.5241939
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-10062958565",
+   "properties": {
+    "name": "Soledad and Macapugay Pediatric Clinic",
+    "kind": "clinic",
+    "speciality": "paediatrics"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9861325,
+     14.6551864
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-255060848",
+   "properties": {
+    "name": "John Paul Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9917702,
+     14.6597041
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11499298247",
+   "properties": {
+    "name": "Mothercare Women’s Clinic",
+    "kind": "clinic",
+    "speciality": "gynaecology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9982702,
+     14.6140857
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13175437946",
+   "properties": {
+    "name": "DialyMed Renal Care Center",
+    "kind": "clinic",
+    "speciality": "nephrology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9716358,
+     14.6567674
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13097871326",
+   "properties": {
+    "name": "Aesthetic Science Quezon City",
+    "kind": "clinic",
+    "speciality": "plastic_surgery;body",
+    "operator": "private",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0276207,
+     14.6348033
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7128394885",
+   "properties": {
+    "name": "Asia Pacific Medical and Diagnostic Services Inc.",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0033957,
+     14.5536493
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5698332955",
+   "properties": {
+    "name": "Malibay Health Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0093263,
+     14.5339806
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-10975922966",
+   "properties": {
+    "name": "MediCard Clinic",
+    "kind": "clinic",
+    "city": "Makati"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0146782,
+     14.5585433
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1255073134",
+   "properties": {
+    "name": "InterMed Healtcare",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0283432,
+     14.646921
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-255071258",
+   "properties": {
+    "name": "Baesa Advent Polyclinic",
+    "kind": "hospital",
+    "tagSource": "jklinc"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0052375,
+     14.6767411
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7735520987",
+   "properties": {
+    "name": "Kalayaan Health Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0176779,
+     14.6155388
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7735603185",
+   "properties": {
+    "name": "Richstone Surgicare",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0152681,
+     14.6264687
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11082277450",
+   "properties": {
+    "name": "Unciano Paramedical General Hospital",
+    "kind": "hospital",
+    "speciality": "general"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.016232,
+     14.600722
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-2126363196",
+   "properties": {
+    "name": "Clinica Dela Luz",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0185673,
+     14.5924357
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-9748250949",
+   "properties": {
+    "name": "Kamiseta Skin Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.029616,
+     14.6351103
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6570104690",
+   "properties": {
+    "name": "Dr.",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9900212,
+     14.6609672
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6141283187",
+   "properties": {
+    "name": "R.E. Mallari Clinical Diagnostic Laboratory",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9841254,
+     14.6563725
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3076961798",
+   "properties": {
+    "name": "Herran Laboratory & Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0126518,
+     14.5815026
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4574914790",
+   "properties": {
+    "name": "210 Intercon Diagnostic Center",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9953512,
+     14.6374707
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1279209740",
+   "properties": {
+    "name": "Amisola Maternity Hospital",
+    "kind": "hospital",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9781047,
+     14.6328532
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4322373590",
+   "properties": {
+    "name": "Three Kings Diagnostic Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.973037,
+     14.6493197
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7091616585",
+   "properties": {
+    "name": "Vizcarra Diagnostic Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9798101,
+     14.5796791
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7091095985",
+   "properties": {
+    "name": "Avs Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9801602,
+     14.5777594
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6914542986",
+   "properties": {
+    "name": "V. Tongco Medical and Diagnostic Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9440063,
+     14.6713347
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7091568385",
+   "properties": {
+    "name": "Sea Landers Diagnostic and Treatment Center",
+    "kind": "clinic",
+    "operator": "private"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9841192,
+     14.5734142
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3604049275",
+   "properties": {
+    "name": "Red Cresent",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9414158,
+     14.6714078
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5746203921",
+   "properties": {
+    "name": "Micah Clinic",
+    "kind": "hospital",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.992672,
+     14.5728051
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4885421324",
+   "properties": {
+    "name": "Merita Medical Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9916645,
+     14.5708763
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-2303693406",
+   "properties": {
+    "name": "ARO Aesthetic & Medical Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9837467,
+     14.6564833
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-255071879",
+   "properties": {
+    "name": "Our Lady Of Grace Hospital",
+    "kind": "hospital",
+    "tagSource": "Benta Serbisyo"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.981758,
+     14.64872
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3233877636",
+   "properties": {
+    "name": "Le Clinique",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0450449,
+     14.5541682
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7039937886",
+   "properties": {
+    "name": "Makati Social Hygiene Clinic",
+    "kind": "clinic",
+    "operator": "government"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0272574,
+     14.5704289
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4213401190",
+   "properties": {
+    "name": "Maria Clara Health Center and Lying-in Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9907687,
+     14.6180782
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1478860716",
+   "properties": {
+    "name": "Kamuning Health Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0368826,
+     14.6258393
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-9583968134",
+   "properties": {
+    "name": "Philippine Gamma Knife Center",
+    "kind": "clinic",
+    "speciality": "radiotherapy"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0463877,
+     14.5972482
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-10737963906",
+   "properties": {
+    "name": "Christian Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0310746,
+     14.6129468
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6560992643",
+   "properties": {
+    "name": "Xanderm",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0475624,
+     14.5753138
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3778738908",
+   "properties": {
+    "name": "QualiMed",
+    "kind": "clinic",
+    "city": "Makati"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0294571,
+     14.5496861
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4574914890",
+   "properties": {
+    "name": "Rebmann 88",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0384521,
+     14.6338974
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-9222802752",
+   "properties": {
+    "name": "The Medical City Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0341989,
+     14.604274
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-5783078557",
+   "properties": {
+    "name": "Aesthetic Science",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0250811,
+     14.5631115
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4580287291",
+   "properties": {
+    "name": "Cangco medical clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0111653,
+     14.5618059
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12683935558",
+   "properties": {
+    "name": "Healthline Multispecialty Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9820689,
+     14.5802842
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12194623363",
+   "properties": {
+    "name": "CB Dialysis Center",
+    "kind": "hospital"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9513335,
+     14.660274
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12193991210",
+   "properties": {
+    "name": "CSM Dental Clinic",
+    "kind": "hospital",
+    "speciality": "dentist",
+    "city": "Malabon"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9525315,
+     14.6587471
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11389903384",
+   "properties": {
+    "name": "Healthway",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9826939,
+     14.5780018
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6603179440",
+   "properties": {
+    "name": "Skintelligence Dermatology",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0101234,
+     14.5807936
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13256226056",
+   "properties": {
+    "name": "Premiere Eye Center",
+    "kind": "clinic",
+    "speciality": "ophthalmology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9785985,
+     14.5790726
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-9458588363",
+   "properties": {
+    "name": "Dilaysis Center",
+    "kind": "clinic",
+    "speciality": "dialysis"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9889662,
+     14.6569575
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-6959176897",
+   "properties": {
+    "name": "Nephro Group of Dialysis Center",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0296116,
+     14.6528082
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-1255128645",
+   "properties": {
+    "name": "NSPI Dialysis Center",
+    "kind": "clinic",
+    "city": "Quezon City"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.029599,
+     14.6527162
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7328540596",
+   "properties": {
+    "name": "Barangay Dasmariñas Clinic",
+    "kind": "clinic",
+    "operator": "public",
+    "city": "Makati"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0304718,
+     14.5369756
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13304965973",
+   "properties": {
+    "name": "Renalink Nephrology Center",
+    "kind": "clinic",
+    "speciality": "nephrology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9714346,
+     14.670223
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13304951867",
+   "properties": {
+    "name": "Malabon Polymedic Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9675196,
+     14.6686253
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13304951881",
+   "properties": {
+    "name": "Clinica de Salvacion",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9692835,
+     14.6694394
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-8424682317",
+   "properties": {
+    "name": "Our Lady of Grace Hospital",
+    "kind": "hospital"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.981379,
+     14.6488967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11990479585",
+   "properties": {
+    "name": "AnimalBite Bakuna",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0254317,
+     14.6596144
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11944780083",
+   "properties": {
+    "name": "Califonia Bloom",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.024788,
+     14.62205
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11982183164",
+   "properties": {
+    "name": "Dr. Noel Mariano Santos Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0344049,
+     14.6616547
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11993482304",
+   "properties": {
+    "name": "Family Health Clinic",
+    "kind": "clinic",
+    "speciality": "gynaecology;paediatrics;internal;surgery"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0487255,
+     14.6278597
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4893104021",
+   "properties": {
+    "name": "Recina Derm",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0217134,
+     14.6655094
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-10571434885",
+   "properties": {
+    "name": "Associated Medical Services",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0156976,
+     14.5586031
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3233877596",
+   "properties": {
+    "name": "Aimee Aguilar-Teo M.D.",
+    "kind": "clinic",
+    "city": "Taguig"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0444794,
+     14.5522398
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-4185393902",
+   "properties": {
+    "name": "Skin Station",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9765325,
+     14.5971965
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-3145109830",
+   "properties": {
+    "name": "Peregrine Eye and Laser Institute",
+    "kind": "clinic",
+    "city": "Makati"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.030931,
+     14.5606709
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-7123901186",
+   "properties": {
+    "name": "American Out Patient Clinic",
+    "kind": "clinic",
+    "city": "Manila"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.973162,
+     14.592982
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12815949686",
+   "properties": {
+    "name": "The Medical City-Trinoma",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0342086,
+     14.6543543
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12387713742",
+   "properties": {
+    "name": "Esthetics Science Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0257116,
+     14.5565221
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-12363377917",
+   "properties": {
+    "name": "New World Diagnostics",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.984589,
+     14.541143
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-8346330038",
+   "properties": {
+    "name": "Health Cube",
+    "kind": "clinic",
+    "operator": "private",
+    "city": "Mandaluyong"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0329763,
+     14.5915504
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-13452895418",
+   "properties": {
+    "name": "Teknomed",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0412063,
+     14.624549
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11529842201",
+   "properties": {
+    "name": "St. Jude Medical Clinic and Diagnostic Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9655037,
+     14.6681323
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11997902993",
+   "properties": {
+    "name": "Metro-Avenue Medical Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0471127,
+     14.6746631
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11997902899",
+   "properties": {
+    "name": "RSV Polyclinic & Diagnostic Center",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0460186,
+     14.6749933
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11994971608",
+   "properties": {
+    "name": "RNV Ob-Gyne Clinic",
+    "kind": "clinic",
+    "speciality": "gynaecology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9935931,
+     14.6188881
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11994932496",
+   "properties": {
+    "name": "TLC Ob-Gyn & Medical Clinic",
+    "kind": "clinic",
+    "speciality": "gynaecology"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.9920514,
+     14.6204917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11993561526",
+   "properties": {
+    "name": "Dangay Medical Clinic",
+    "kind": "clinic",
+    "speciality": "dental_oral_maxillo_facial_surgery;surgery"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0211635,
+     14.6562903
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11981019698",
+   "properties": {
+    "name": "Marcelo Delos Santos Child and Adult Clinic",
+    "kind": "clinic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0341083,
+     14.6610468
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "node-11943417445",
+   "properties": {
+    "name": "Beaufaces",
+    "kind": "clinic",
+    "speciality": "cosmetic"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0235481,
+     14.6214127
+    ]
+   }
+  }
+ ]
+}

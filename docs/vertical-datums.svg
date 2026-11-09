@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+  <title id="t">How terrain heights and sea levels are measured, and how they relate</title>
+  <desc id="d">A cross-section of a low coast, not to scale. From the bottom: the WGS84 ellipsoid; the geoid, which EGM2008 and EGM96 model; local mean sea level over 1995 to 2014, the AR6 baseline, which sits above the geoid by an offset measured at a levelled tide gauge; and a projected sea level, the baseline plus the AR6 rise. On land, bare ground is what DeltaDTM and FABDEM model; the surface with roofs and trees is what Copernicus DEM GLO-30 and NASADEM model. At a place on land: h is its height above the ellipsoid; N is the geoid's height above the ellipsoid; H is its height above the geoid, which the terrain models give; so h equals H plus N. Its height above local sea is H minus the offset. This place is above today's sea but below the projected sea level.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="#ffffff"/>
+  <text x="40" y="44" font-size="26" font-weight="700" fill="#111">Heights on a low coast: what each is measured from</text>
+  <text x="40" y="72" font-size="16" fill="#333">A cross-section, not to scale: vertical distances are exaggerated so each one can be seen.</text>
+  <text x="40" y="94" font-size="16" fill="#333">The four heights at the place on land are drawn side by side; all four are of that one place.</text>
+
+  <!-- Water up to local mean sea level, then land drawn over it -->
+  <path d="M40 440 L600 440 L600 640 L40 640 Z" fill="#d6e8f7"/>
+  <path d="M40 600 L300 595 C 400 585, 470 470, 560 440 C 640 420, 720 410, 800 404 C 900 395, 1000 340, 1160 300 L1160 650 L40 650 Z" fill="#efe4d2"/>
+
+  <!-- Ellipsoid -->
+  <path d="M40 650 L1160 650" stroke="#555" stroke-width="3" stroke-dasharray="14 8" fill="none"/>
+  <text x="40" y="678" font-size="17" fill="#333"><tspan font-weight="700">Ellipsoid</tspan> (WGS84): a smooth mathematical surface. Satellite positioning (GNSS) gives heights above it.</text>
+
+  <!-- Geoid -->
+  <path d="M40 510 C 300 495, 500 515, 700 500 S 1000 485, 1160 495" stroke="#6a2fa8" stroke-width="3.5" stroke-dasharray="4 6" fill="none"/>
+  <text x="60" y="532" font-size="17" fill="#5a2a8c"><tspan font-weight="700">Geoid</tspan> (EGM2008, EGM96):</text>
+  <text x="60" y="552" font-size="16" fill="#5a2a8c">where the sea would rest under gravity alone</text>
+
+  <!-- Local mean sea level: solid over the sea, dotted where it runs under the land -->
+  <path d="M40 440 L560 440" stroke="#0b5aa6" stroke-width="4" fill="none"/>
+  <path d="M560 440 L1160 440" stroke="#0b5aa6" stroke-width="2" stroke-dasharray="2 6" fill="none"/>
+  <text x="60" y="466" font-size="17" fill="#0b4a88"><tspan font-weight="700">Local mean sea level</tspan>, 1995–2014:</text>
+  <text x="60" y="486" font-size="16" fill="#0b4a88">the AR6 baseline</text>
+
+  <!-- Projected sea level -->
+  <path d="M40 360 L1160 360" stroke="#0b5aa6" stroke-width="3" stroke-dasharray="16 7" fill="none"/>
+  <text x="60" y="350" font-size="17" fill="#0b4a88"><tspan font-weight="700">Projected sea level</tspan>: the baseline + the AR6 rise</text>
+  <!-- The rise -->
+  <line x1="250" y1="436" x2="250" y2="364" stroke="#0b4a88" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="260" y="406" font-size="17" font-weight="700" fill="#0b4a88">AR6 rise</text>
+
+  <!-- Bare ground (DTM) -->
+  <path d="M40 600 L300 595 C 400 585, 470 470, 560 440 C 640 420, 720 410, 800 404 C 900 395, 1000 340, 1160 300" stroke="#7b4a12" stroke-width="5" fill="none"/>
+  <!-- Surface model (DSM): roofs and trees -->
+  <path d="M800 404 C 830 402, 850 400, 870 398 L870 340 L930 340 L930 392 C 950 388, 965 384, 975 380
+           C 978 345, 1010 330, 1030 336 C 1048 342, 1054 358, 1056 364 C 1075 356, 1090 350, 1100 346 L1100 296 L1160 296"
+        stroke="#3d3d3d" stroke-width="3" stroke-dasharray="9 5" fill="none"/>
+  <text x="860" y="250" font-size="17" fill="#3d3d3d"><tspan font-weight="700">Surface model</tspan>: roofs and trees included</text>
+  <text x="860" y="272" font-size="16" fill="#3d3d3d">Copernicus DEM GLO-30, NASADEM</text>
+  <text x="960" y="560" font-size="17" fill="#6b3d0c"><tspan font-weight="700">Bare ground</tspan></text>
+  <text x="960" y="582" font-size="16" fill="#6b3d0c">DeltaDTM, FABDEM</text>
+
+  <!-- Tide gauge, in the water at the shore -->
+  <rect x="470" y="380" width="14" height="190" fill="#b0b0b0" stroke="#333" stroke-width="2"/>
+  <text x="477" y="300" font-size="16" font-weight="700" fill="#111" text-anchor="middle">Tide gauge</text>
+  <text x="477" y="320" font-size="15" fill="#333" text-anchor="middle">levelled, it gives</text>
+  <text x="477" y="338" font-size="15" fill="#333" text-anchor="middle">the offset</text>
+  <!-- Offset: geoid to local mean sea level, at the gauge -->
+  <line x1="440" y1="506" x2="440" y2="444" stroke="#111" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="432" y="482" font-size="17" font-weight="700" fill="#111" text-anchor="end">offset</text>
+
+  <!-- A place on land, x = 800: above today's sea, below the projected sea -->
+  <line x1="800" y1="200" x2="800" y2="650" stroke="#999" stroke-width="1" stroke-dasharray="3 4"/>
+  <text x="800" y="190" font-size="16" fill="#111" text-anchor="middle">a place on land</text>
+  <circle cx="800" cy="404" r="6" fill="#7b4a12" stroke="#fff" stroke-width="1.5"/>
+  <!-- h: ellipsoid to ground -->
+  <line x1="700" y1="646" x2="700" y2="412" stroke="#111" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="690" y="580" font-size="22" font-weight="700" fill="#111" text-anchor="end">h</text>
+  <!-- N: ellipsoid to geoid -->
+  <line x1="740" y1="646" x2="740" y2="504" stroke="#5a2a8c" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="732" y="590" font-size="22" font-weight="700" fill="#5a2a8c" text-anchor="end">N</text>
+  <!-- H: geoid to ground -->
+  <line x1="770" y1="497" x2="770" y2="410" stroke="#6b3d0c" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="762" y="470" font-size="22" font-weight="700" fill="#6b3d0c" text-anchor="end">H</text>
+  <!-- Height above local sea: local MSL to ground -->
+  <line x1="830" y1="436" x2="830" y2="410" stroke="#0b4a88" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="840" y="430" font-size="16" fill="#0b4a88"><tspan font-weight="700">above local sea</tspan> = H − offset</text>
+
+  <!-- Key -->
+  <rect x="40" y="700" width="1120" height="84" rx="8" fill="#f4f4f4" stroke="#bbb"/>
+  <text x="58" y="728" font-size="17" fill="#111"><tspan font-weight="700">h = H + N.</tspan> The terrain models give <tspan font-weight="700">H</tspan>, a height above the geoid: not above the sea.</text>
+  <text x="58" y="752" font-size="17" fill="#111"><tspan font-weight="700">Height above local sea = H − offset.</tspan> This place is above today's sea and below the projected one.</text>
+  <text x="58" y="776" font-size="17" fill="#111">That can be said only when the terrain model's datum <tspan font-weight="700">and</tspan> the offset are both sourced and stated.</text>
+</svg>

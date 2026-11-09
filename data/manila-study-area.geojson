@@ -1,0 +1,38 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Manila coastal study area"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       120.93,
+       14.52
+      ],
+      [
+       121.05,
+       14.52
+      ],
+      [
+       121.05,
+       14.68
+      ],
+      [
+       120.93,
+       14.68
+      ],
+      [
+       120.93,
+       14.52
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use these data, cite the sources below. The projections ask for three citations; the facilities are OpenStreetMap's, under the ODbL."
+title: "Sea-level rise at Manila's health facilities: AR6 projections for eight Philippine tide gauges"
+type: dataset
+authors:
+  - name: "The Fieldwork project (digital-twin-ph)"
+repository-code: "https://github.com/digital-twin-ph/example-2026-sea-level-rise-philippines"
+abstract: "IPCC AR6 sea-level projections for eight Philippine tide gauges (CC BY 4.0), and 194 health facilities in coastal Manila from OpenStreetMap (ODbL 1.0), for teaching which projection applies to a place and what it does not say. Not a flood model."
+references:
+  - type: dataset
+    title: "IPCC AR6 Sea Level Projections"
+    authors:
+      - family-names: Garner
+        given-names: Gregory G.
+    version: "20210809"
+    doi: 10.5281/zenodo.5914709
+  - type: book-section
+    title: "Ocean, Cryosphere and Sea Level Change"
+    authors:
+      - family-names: Fox-Kemper
+        given-names: B.
+    year: 2021
+    doi: 10.1017/9781009157896.011
+  - type: article
+    title: "The Framework for Assessing Changes To Sea-Level (FACTS) v1.0"
+    authors:
+      - family-names: Kopp
+        given-names: Robert E.
+    year: 2023
+    doi: 10.5194/gmd-16-7461-2023
+keywords:
+  - sea-level rise
+  - IPCC AR6
+  - Philippines
+  - health facilities

@@ -1,0 +1,125 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "site-145",
+   "properties": {
+    "name": "Manila",
+    "site_id": "145"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.97,
+     14.58
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "site-260",
+   "properties": {
+    "name": "Jolo",
+    "site_id": "260"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.0,
+     6.07
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "site-394",
+   "properties": {
+    "name": "Cebu",
+    "site_id": "394"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     123.92,
+     10.3
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "site-522",
+   "properties": {
+    "name": "Legaspi",
+    "site_id": "522"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     123.75,
+     13.15
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "site-537",
+   "properties": {
+    "name": "Davao",
+    "site_id": "537"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     125.63,
+     7.08
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "site-664",
+   "properties": {
+    "name": "Tacloban",
+    "site_id": "664"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     125.0,
+     11.25
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "site-1708",
+   "properties": {
+    "name": "Surigao",
+    "site_id": "1708"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     125.5,
+     9.78
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "site-1711",
+   "properties": {
+    "name": "San Jose",
+    "site_id": "1711"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.08,
+     12.33
+    ]
+   }
+  }
+ ]
+}

@@ -1125,7 +1125,7 @@
     {
      "fill": "note-text",
      "label": "The note",
-     "value": "**Not a flood map.** A rise at a gauge does not say which ground it would reach: that needs the ground’s height and the local sea’s, measured from the same surface. At the Manila gauge, EGM2008, which open terrain models measure from, and NAMRIA’s gravimetric geoid agree within 2 mm (43.009 and 43.011 m above the ellipsoid), and NAMRIA’s geoid fitted to mean sea level stands 0.85 m above both. A height above EGM2008 there is about 0.85 m more than the same point’s height above NAMRIA’s mean sea level. Which years that mean sea level stands for is not stated, and the gauge’s record rises about 15 mm a year over 1995–2014, so its offset from the AR6 baseline is not yet known. No facility is said to lie below a projected sea level."
+     "value": "**Not a flood map.** A rise at a gauge does not say which ground it would reach: that needs the ground’s height and the local sea’s, measured from the same surface. At the Manila gauge, EGM2008, which DeltaDTM and other open terrain models measure from, and NAMRIA’s gravimetric geoid agree within 2 mm (43.009 and 43.011 m above the ellipsoid), and NAMRIA’s geoid fitted to mean sea level stands 0.85 m above both, within about 10 cm. Which years that mean sea level stands for is not stated by NAMRIA, and it matters: the gauge’s 1995–2014 mean, the AR6 baseline, stands 104 to 757 mm above the means of earlier 19-year periods. No facility is said to lie below a projected sea level."
     },
     {
      "choose": "note-function",
@@ -1175,6 +1175,50 @@
      "fill": "cite-retrieved",
      "label": "Accessed",
      "value": "2026-11-09"
+    },
+    {
+     "click": "#cite-add",
+     "label": "Add citation"
+    },
+    {
+     "choose": "cite-type",
+     "label": "Kind of work",
+     "value": "article"
+    },
+    {
+     "fill": "cite-authors",
+     "label": "Authors, one per line",
+     "value": "Gatchalian, Ronaldo Cruz\nForsberg, René\nOlesen, Arne Vestergaard"
+    },
+    {
+     "fill": "cite-title",
+     "label": "Title",
+     "value": "A new Philippine geoid model from airborne and terrestrial gravity data"
+    },
+    {
+     "fill": "cite-published",
+     "label": "Published",
+     "value": "2021"
+    },
+    {
+     "fill": "cite-container",
+     "label": "Journal or containing work",
+     "value": "Terrestrial, Atmospheric and Oceanic Sciences"
+    },
+    {
+     "fill": "cite-volume",
+     "label": "Volume",
+     "value": "32"
+    },
+    {
+     "fill": "cite-pages",
+     "label": "Pages",
+     "value": "913–920"
+    },
+    {
+     "fill": "cite-doi",
+     "label": "DOI",
+     "value": "10.3319/TAO.2021.11.15.01"
     },
     {
      "click": "#cite-add",

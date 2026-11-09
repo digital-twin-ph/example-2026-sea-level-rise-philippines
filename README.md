@@ -46,7 +46,7 @@ clinic, named, clipped to the study area: 194 kept. **Find health facilities** r
 
 The project file `fieldwork-project.json.gz` holds the workflows and a write-up of twelve notes, as it would be
 submitted: the question and the datum diagram in the Introduction, sources and methods, the two findings, and in the
-Discussion what the land's motion means, why this is not a flood map, and the checks made. Five works are cited.
+Discussion what the land's motion means, why this is not a flood map, and the checks made. Six works are cited.
 `manual.json` builds all of it from an empty canvas.
 
 1. **Which tide gauge's projection applies to each facility, and how far is it?** **Measure distance** finds each
@@ -79,7 +79,7 @@ be tens of centimetres to more than a metre.
 
 | Model | Heights measured from | Licence | The surface |
 | --- | --- | --- | --- |
-| DeltaDTM v1.1 ([data record](https://data.4tu.nl/datasets/1da2e70f-6c4d-4b03-86bd-b53e789cc629), doi:10.4121/21997565) | Not stated in its data record; EGM2008 is likely, an inference | CC BY 4.0 | Bare ground, made for low coasts; stated error about 0.43 m |
+| DeltaDTM v1.1 ([data record](https://data.4tu.nl/datasets/1da2e70f-6c4d-4b03-86bd-b53e789cc629), doi:10.4121/21997565) | **EGM2008**, as its paper states ([`docs/41597_2024_Article_3091.pdf`](docs/41597_2024_Article_3091.pdf), CC BY 4.0) | CC BY 4.0 | Bare ground, made for low coasts; stated error about 0.43 m |
 | Copernicus DEM GLO-30 | EGM2008 geoid | Free, credited "© DLR e.V." | Roofs and trees included |
 | NASADEM | EGM96 geoid | NASA data, any use; its archive asks for a login | Roofs and trees included, from 2000 radar |
 | FABDEM | EGM2008, by one secondary source | CC BY-NC-SA 4.0: non-commercial | Bare ground |
@@ -88,13 +88,26 @@ be tens of centimetres to more than a metre.
 
 | Source | What it gives | Open? |
 | --- | --- | --- |
-| PGM2018, NAMRIA's Philippine geoid ([ISG](https://isgeoid.polimi.it/Geoid/Asia/Philippines/philippines18_g.html)) | A geoid fitted to the Philippine datum; its difference from EGM2008 would be the offset | Served without sign-in; **no licence stated** |
+| PGM2018, NAMRIA's Philippine geoid ([NAMRIA](https://www.namria.gov.ph/projects.aspx); method: Gatchalian, Forsberg and Olesen 2021, [doi:10.3319/TAO.2021.11.15.01](https://doi.org/10.3319/TAO.2021.11.15.01)) | A geoid fitted to each island's mean sea level, and a gravimetric one | Downloadable without sign-in; NAMRIA says the files are for public use |
 | DTU22MDT, DTU Space (doi:10.11583/DTU.26947894) | The mean sea surface above a geoid, 1993–2012 | Licence not confirmed |
 | CNES-CLS22, AVISO+ | The same, 1993–2012 | Needs an account and a licence agreement: not open |
 
-**Not established:** DeltaDTM's datum (its methods paper was not read); PGM2018's licence; the correction from the
-Philippine datum's epoch to 1995–2014; whether a levelled tide gauge at Manila gives the offset directly. Until the
-datum and the offset are both sourced, nothing here can say that a place lies below a projected sea level.
+**At the Manila gauge, 2026-11-09:**
+
+| Surface | Height above the ellipsoid |
+| --- | --- |
+| EGM2008, which DeltaDTM and Copernicus DEM measure from | 43.009 m |
+| PGM2018, gravimetric | 43.011 m |
+| PGM2018, fitted to mean sea level (ITRF) | 43.862 m |
+
+So a DeltaDTM height at Manila is about 0.85 m more than the same ground's height above NAMRIA's mean sea level, within
+about 10 cm, the fitted model's stated error. This holds on Luzon only: each island has its own mean sea level.
+
+**Not established: which years NAMRIA's mean sea level stands for.** NAMRIA's documents say the network was levelled from
+the Manila harbour tide-gauge benchmark, BM-66, from the early 1900s, and that mean sea level is taken over about 19
+years; none gives the years. It matters: by PSMSL's record at the gauge, the 1995–2014 mean, AR6's baseline, stands
+757 mm above the 1902–1920 mean, 686 mm above 1947–1965 and 104 mm above 1990–2008. Until NAMRIA says which, nothing
+here can say that a place lies below a projected sea level.
 
 ## Source, terms and credit
 

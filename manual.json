@@ -133,8 +133,8 @@
      "select": "sites"
     },
     {
-     "click": "#edit-input-data",
-     "label": "Prepare input data",
+     "click": "#configure-step",
+     "label": "Configure…",
      "opens": "Input data"
     },
     {
@@ -154,7 +154,7 @@
     },
     {
      "fill": "source-label",
-     "label": "Source label",
+     "label": "Name",
      "value": "AR6 projection sites"
     },
     {
@@ -349,8 +349,8 @@
      "select": "sites"
     },
     {
-     "click": "#edit-input-data",
-     "label": "Prepare input data",
+     "click": "#configure-step",
+     "label": "Configure…",
      "opens": "Input data"
     },
     {
@@ -370,7 +370,7 @@
     },
     {
      "fill": "source-label",
-     "label": "Source label",
+     "label": "Name",
      "value": "AR6 projection sites"
     },
     {
@@ -1512,8 +1512,8 @@
      "select": "sites"
     },
     {
-     "click": "#edit-input-data",
-     "label": "Prepare input data",
+     "click": "#configure-step",
+     "label": "Configure…",
      "opens": "Input data"
     },
     {
@@ -1533,7 +1533,7 @@
     },
     {
      "fill": "source-label",
-     "label": "Source label",
+     "label": "Name",
      "value": "AR6 projection sites"
     },
     {

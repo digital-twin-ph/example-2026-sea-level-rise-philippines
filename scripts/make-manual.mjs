@@ -19,11 +19,11 @@ const steps={
   // A POINT LAYER FROM A FILE OF THIS REPOSITORY.
   points:(as,path,label)=>[
     {add:'point_input',as},{select:as},
-    {click:'#edit-input-data',label:'Prepare input data',opens:'Input data'},
+    {click:'#configure-step',label:'Configure…',opens:'Input data'},
     {choose:'input-mode',label:'Input method',value:'geojson',shown:'Import GeoJSON'},
     {file:'input-file',label:'Local file · 5 MB maximum',path},
     {click:'#input-apply',label:'Save Edits'},
-    {fill:'source-label',label:'Source label',value:label},
+    {fill:'source-label',label:'Name',value:label},
     {click:'[data-label-form="source-label"] button',label:'Apply label'}],
   // THE FACILITIES, AS A PERSON FINDS THEM: Find health facilities, the Humanitarian OpenStreetMap Team's country
   // export, kept where they fall in the study area. Hospitals and clinics with a name are its defaults.

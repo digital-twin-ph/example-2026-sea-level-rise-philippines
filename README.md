@@ -44,8 +44,10 @@ clinic, named, clipped to the study area: 194 kept. **Find health facilities** r
 
 ## Workflows
 
-The project file `fieldwork-project.json.gz` holds the workflows, and a note in the write-up's Introduction carrying
-the datum diagram; `manual.json` builds them from an empty canvas.
+The project file `fieldwork-project.json.gz` holds the workflows and a write-up of twelve notes, as it would be
+submitted: the question and the datum diagram in the Introduction, sources and methods, the two findings, and in the
+Discussion what the land's motion means, why this is not a flood map, and the checks made. Five works are cited.
+`manual.json` builds all of it from an empty canvas.
 
 1. **Which tide gauge's projection applies to each facility, and how far is it?** **Measure distance** finds each
    facility's nearest gauge; all eight have projections. All 194 are nearest Manila's.

@@ -163,140 +163,24 @@
      "label": "Apply label"
     },
     {
-     "note": "The projections, in millimetres above the 1995–2014 average."
+     "note": "Find each facility’s nearest gauge and how far it is. Every one of the eight has projections."
     },
     {
-     "add": "table_input",
-     "as": "projections"
-    },
-    {
-     "select": "projections"
-    },
-    {
-     "click": "#open-table",
-     "label": "Configure…",
-     "opens": "Tabular data"
-    },
-    {
-     "click": "#table-remote summary",
-     "label": "Or fetch from a URL",
-     "dialog": "Tabular data"
-    },
-    {
-     "fill": "table-url",
-     "label": "URL of a CSV, Stata file or zip",
-     "value": "https://raw.githubusercontent.com/digital-twin-ph/example-2026-sea-level-rise-philippines/c9389886237d9c7885dc82d6cbefcf0fbb2fdfdc/data/ar6-projections-philippine-gauges.csv",
-     "dialog": "Tabular data"
-    },
-    {
-     "click": "#table-fetch",
-     "label": "Fetch",
-     "dialog": "Tabular data"
-    },
-    {
-     "choose": "table-shape",
-     "label": "Shape of the file",
-     "value": "long",
-     "shown": "Long",
-     "dialog": "Tabular data"
-    },
-    {
-     "choose": "table-value",
-     "label": "Value column",
-     "value": "value_mm",
-     "dialog": "Tabular data"
-    },
-    {
-     "tick": "table-keys",
-     "label": "Key columns",
-     "values": [
-      "site_id",
-      "scenario",
-      "basis",
-      "family",
-      "year",
-      "quantile"
-     ],
-     "dialog": "Tabular data"
-    },
-    {
-     "tick": "table-distinct",
-     "label": "List the distinct values of",
-     "values": [
-      "site_id"
-     ],
-     "dialog": "Tabular data"
-    },
-    {
-     "fill": "table-unit",
-     "label": "Unit of the value (entered by you)",
-     "value": "millimetre",
-     "dialog": "Tabular data"
-    },
-    {
-     "click": "#table-save",
-     "label": "Apply",
-     "dialog": "Tabular data"
-    },
-    {
-     "note": "Declare what the projections are: the AR6 dataset, its baseline, its unit and the three citations its licence asks for. A published ruleset holds them."
-    },
-    {
-     "add": "apply_ruleset",
-     "as": "extract"
-    },
-    {
-     "select": "extract"
-    },
-    {
-     "click": "#configure-step",
-     "label": "Configure…",
-     "opens": "Apply ruleset"
-    },
-    {
-     "choose": "ruleset-choice",
-     "label": "Ruleset",
-     "value": "urn:fieldwork:ruleset:extract-contract@1.0.0",
-     "dialog": "Apply ruleset"
-    },
-    {
-     "click": "#ruleset-config #config-apply",
-     "label": "Apply",
-     "dialog": "Apply ruleset"
-    },
-    {
-     "connect": {
-      "from": "projections",
-      "to": "extract",
-      "port": "projections"
-     }
-    },
-    {
-     "note": "Assign each facility the nearest gauge that has a projection, with the distance."
-    },
-    {
-     "add": "slr_site_assignment",
-     "as": "assignment"
+     "add": "measure_distance",
+     "as": "nearest"
     },
     {
      "connect": {
       "from": "facilities",
-      "to": "assignment",
+      "to": "nearest",
       "port": "points"
      }
     },
     {
      "connect": {
       "from": "sites",
-      "to": "assignment",
-      "port": "sites"
-     }
-    },
-    {
-     "connect": {
-      "from": "extract",
-      "to": "assignment",
-      "port": "projections"
+      "to": "nearest",
+      "port": "candidates"
      }
     },
     {
@@ -345,7 +229,7 @@
     },
     {
      "connect": {
-      "from": "assignment",
+      "from": "nearest",
       "to": "table",
       "port": "table"
      }
@@ -354,7 +238,7 @@
      "run": true
     },
     {
-     "see": "every facility assigned Manila’s gauge, 145, with its distance in metres",
+     "see": "every facility’s nearest gauge, Manila’s, 145, with its distance in kilometres",
      "check": "145"
     }
    ]
@@ -496,6 +380,27 @@
      "label": "Apply label"
     },
     {
+     "add": "measure_distance",
+     "as": "nearest"
+    },
+    {
+     "connect": {
+      "from": "facilities",
+      "to": "nearest",
+      "port": "points"
+     }
+    },
+    {
+     "connect": {
+      "from": "sites",
+      "to": "nearest",
+      "port": "candidates"
+     }
+    },
+    {
+     "note": "The projections, in millimetres above the 1995–2014 average."
+    },
+    {
      "add": "table_input",
      "as": "projections"
     },
@@ -550,14 +455,6 @@
      "dialog": "Tabular data"
     },
     {
-     "tick": "table-distinct",
-     "label": "List the distinct values of",
-     "values": [
-      "site_id"
-     ],
-     "dialog": "Tabular data"
-    },
-    {
      "fill": "table-unit",
      "label": "Unit of the value (entered by you)",
      "value": "millimetre",
@@ -567,6 +464,9 @@
      "click": "#table-save",
      "label": "Apply",
      "dialog": "Tabular data"
+    },
+    {
+     "note": "Declare what the projections are: the AR6 dataset, its baseline, its unit and the three citations its licence asks for. A published ruleset holds them."
     },
     {
      "add": "apply_ruleset",
@@ -595,31 +495,6 @@
      "connect": {
       "from": "projections",
       "to": "extract",
-      "port": "projections"
-     }
-    },
-    {
-     "add": "slr_site_assignment",
-     "as": "assignment"
-    },
-    {
-     "connect": {
-      "from": "facilities",
-      "to": "assignment",
-      "port": "points"
-     }
-    },
-    {
-     "connect": {
-      "from": "sites",
-      "to": "assignment",
-      "port": "sites"
-     }
-    },
-    {
-     "connect": {
-      "from": "extract",
-      "to": "assignment",
       "port": "projections"
      }
     },
@@ -767,24 +642,7 @@
      "dialog": "Select rows by value"
     },
     {
-     "note": "Show the assignments in a table and run, so the next step can read their columns."
-    },
-    {
-     "add": "table_output",
-     "as": "table"
-    },
-    {
-     "connect": {
-      "from": "assignment",
-      "to": "table",
-      "port": "table"
-     }
-    },
-    {
-     "run": true
-    },
-    {
-     "note": "Bring each gauge’s rise beside each facility, matched on the gauge."
+     "note": "Bring each gauge’s rise beside each facility, matched on the gauge: Measure distance names it nearest_site_id, the projections site_id."
     },
     {
      "add": "relate_table",
@@ -792,7 +650,7 @@
     },
     {
      "connect": {
-      "from": "assignment",
+      "from": "nearest",
       "to": "rise",
       "port": "records"
      }
@@ -815,7 +673,7 @@
     {
      "choose": "relate-on",
      "label": "Matched on, in the first table",
-     "value": "projection_site",
+     "value": "nearest_site_id",
      "dialog": "Relate a column from another table"
     },
     {
@@ -834,6 +692,10 @@
      "click": "#config-apply",
      "label": "Apply",
      "dialog": "Relate a column from another table"
+    },
+    {
+     "add": "table_output",
+     "as": "table"
     },
     {
      "connect": {

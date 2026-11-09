@@ -45,7 +45,6 @@ const steps={
     {choose:'table-shape',label:'Shape of the file',value:'long',shown:'Long',dialog:'Tabular data'},
     {choose:'table-value',label:'Value column',value:'value_mm',dialog:'Tabular data'},
     {tick:'table-keys',label:'Key columns',values:KEYS,dialog:'Tabular data'},
-    {tick:'table-distinct',label:'List the distinct values of',values:['site_id'],dialog:'Tabular data'},
     {fill:'table-unit',label:'Unit of the value (entered by you)',value:'millimetre',dialog:'Tabular data'},
     {click:'#table-save',label:'Apply',dialog:'Tabular data'}],
   // THE AR6 CONTRACT, a published ruleset: the dataset, its baseline, its unit and its three citations.
@@ -55,11 +54,11 @@ const steps={
     {choose:'ruleset-choice',label:'Ruleset',value:'urn:fieldwork:ruleset:extract-contract@1.0.0',dialog:'Apply ruleset'},
     {click:'#ruleset-config #config-apply',label:'Apply',dialog:'Apply ruleset'},
     {connect:{from,to:as,port:'projections'}}],
-  assign:(as,{points,sites,projections})=>[
-    {add:'slr_site_assignment',as},
+  // THE NEAREST GAUGE AND HOW FAR, by Measure distance: every gauge here has projections, so every one is eligible.
+  nearest:(as,{points,sites})=>[
+    {add:'measure_distance',as},
     {connect:{from:points,to:as,port:'points'}},
-    {connect:{from:sites,to:as,port:'sites'}},
-    {connect:{from:projections,to:as,port:'projections'}}],
+    {connect:{from:sites,to:as,port:'candidates'}}],
   keep:(as,from,column,value)=>[
     {add:'select_rows',as},{connect:{from,to:as,port:'records'}},{select:as},
     {click:'#configure-step',label:'Configure…',opens:SELECT},
@@ -70,7 +69,7 @@ const steps={
 
 const workflows=[];
 
-// 1. WHICH GAUGE, AND HOW FAR: each facility assigned its nearest gauge with a projection, and the distance.
+// 1. WHICH GAUGE, AND HOW FAR: each facility's nearest gauge, by Measure distance, and the distance.
 workflows.push({name:'Which tide gauge’s projection applies to each facility, and how far is it?',steps:[
   ...steps.newProject(),
   ...steps.name('Which tide gauge’s projection applies to each facility, and how far is it?'),
@@ -80,12 +79,8 @@ workflows.push({name:'Which tide gauge’s projection applies to each facility, 
   ...steps.points('facilities','data/manila-health-facilities.geojson','Manila health facilities'),
   {note:'The eight Philippine tide gauges the projections cover.'},
   ...steps.points('sites','data/ar6-projection-sites.geojson','AR6 projection sites'),
-  {note:'The projections, in millimetres above the 1995–2014 average.'},
-  ...steps.projections('projections'),
-  {note:'Declare what the projections are: the AR6 dataset, its baseline, its unit and the three citations its licence asks for. A published ruleset holds them.'},
-  ...steps.contract('extract','projections'),
-  {note:'Assign each facility the nearest gauge that has a projection, with the distance.'},
-  ...steps.assign('assignment',{points:'facilities',sites:'sites',projections:'extract'}),
+  {note:'Find each facility’s nearest gauge and how far it is. Every one of the eight has projections.'},
+  ...steps.nearest('nearest',{points:'facilities',sites:'sites'}),
   {add:'map_output',as:'map'},
   {connect:{from:'area',to:'map',port:'area'}},
   {connect:{from:'facilities',to:'map',port:'points'}},
@@ -95,12 +90,12 @@ workflows.push({name:'Which tide gauge’s projection applies to each facility, 
   {select:'map'},
   {fill:'map-label',label:'Results tab name',value:'Facilities and gauges'},
   {add:'table_output',as:'table'},
-  {connect:{from:'assignment',to:'table',port:'table'}},
+  {connect:{from:'nearest',to:'table',port:'table'}},
   {run:true},
-  {see:'every facility assigned Manila’s gauge, 145, with its distance in metres',check:'145'}]});
+  {see:'every facility’s nearest gauge, Manila’s, 145, with its distance in kilometres',check:'145'}]});
 
 // 2. HOW MUCH: the projections narrowed to one scenario, family, year and quantile, and the rise brought beside each
-// facility's assignment.
+// facility, matched on its nearest gauge.
 workflows.push({name:'How much is sea level projected to rise at each facility’s gauge by 2100?',steps:[
   ...steps.newWorkflow(),
   ...steps.name('How much is sea level projected to rise at each facility’s gauge by 2100?'),
@@ -108,28 +103,27 @@ workflows.push({name:'How much is sea level projected to rise at each facility�
   ...steps.area('area'),
   ...steps.points('facilities','data/manila-health-facilities.geojson','Manila health facilities'),
   ...steps.points('sites','data/ar6-projection-sites.geojson','AR6 projection sites'),
+  ...steps.nearest('nearest',{points:'facilities',sites:'sites'}),
+  {note:'The projections, in millimetres above the 1995–2014 average.'},
   ...steps.projections('projections'),
+  {note:'Declare what the projections are: the AR6 dataset, its baseline, its unit and the three citations its licence asks for. A published ruleset holds them.'},
   ...steps.contract('extract','projections'),
-  ...steps.assign('assignment',{points:'facilities',sites:'sites',projections:'extract'}),
   {note:'Narrow the projections to one of each: a middle-of-the-road scenario, SSP2-4.5; the rise relative to the land, which counts the land’s own sinking; 2100; and the middle of the likely range. Each is a choice you state; the file holds the others.'},
   ...steps.keep('scenario','extract','scenario','ssp245'),
   ...steps.keep('family','scenario','family','with_vlm'),
   ...steps.keep('year','family','year','2100'),
   ...steps.keep('median','year','quantile','0.5'),
-  {note:'Show the assignments in a table and run, so the next step can read their columns.'},
-  {add:'table_output',as:'table'},
-  {connect:{from:'assignment',to:'table',port:'table'}},
-  {run:true},
-  {note:'Bring each gauge’s rise beside each facility, matched on the gauge.'},
+  {note:'Bring each gauge’s rise beside each facility, matched on the gauge: Measure distance names it nearest_site_id, the projections site_id.'},
   {add:'relate_table',as:'rise'},
-  {connect:{from:'assignment',to:'rise',port:'records'}},
+  {connect:{from:'nearest',to:'rise',port:'records'}},
   {connect:{from:'median',to:'rise',port:'related'}},
   {select:'rise'},
   {click:'#configure-step',label:'Configure…',opens:RELATE},
-  {choose:'relate-on',label:'Matched on, in the first table',value:'projection_site',dialog:RELATE},
+  {choose:'relate-on',label:'Matched on, in the first table',value:'nearest_site_id',dialog:RELATE},
   {choose:'relate-right-on',label:'The same, in the second table',value:'site_id',dialog:RELATE},
   {choose:'relate-bring',label:'Bring across',value:'value_mm',dialog:RELATE},
   {click:'#config-apply',label:'Apply',dialog:RELATE},
+  {add:'table_output',as:'table'},
   {connect:{from:'rise',to:'table',port:'table'}},
   {run:true},
   {see:'each facility, its gauge, its distance, and the rise there: 1,124 mm by 2100 under SSP2-4.5, the middle projection, with vertical land motion',check:'1124'},

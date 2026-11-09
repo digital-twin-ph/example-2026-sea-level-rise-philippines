@@ -24,7 +24,7 @@ Columns as the file spells them:
 
 | Column | Holds |
 | --- | --- |
-| `site_id` | The AR6 site: a tide gauge, by its PSMSL number |
+| `site_id` | The AR6 site: a tide gauge. All eight match a PSMSL station by number, name and position ([145](https://psmsl.org/data/obtaining/stations/145.php) is Manila, South Harbor), checked 2026-11-09; AR6's own pages do not say so |
 | `scenario` | `ssp126`, `ssp245` or `ssp585` |
 | `basis` | `medium`: medium confidence. A confidence level, not a model |
 | `family` | `with_vlm`: the sea's rise relative to the land, including the land's own rise or sinking. `without_vlm`: the sea's rise alone |
@@ -47,10 +47,11 @@ clinic, named, clipped to the study area: 194 kept. **Find health facilities** r
 The project file `fieldwork-project.json.gz` holds the workflows, and a note in the write-up's Introduction carrying
 the datum diagram; `manual.json` builds them from an empty canvas.
 
-1. **Which tide gauge's projection applies to each facility, and how far is it?** Each facility is assigned its
-   nearest gauge that has a projection. All 194 are nearest Manila's.
+1. **Which tide gauge's projection applies to each facility, and how far is it?** **Measure distance** finds each
+   facility's nearest gauge; all eight have projections. All 194 are nearest Manila's.
 2. **How much is sea level projected to rise at each facility's gauge by 2100?** The projections are narrowed to one
-   scenario, one family, one year and the middle quantile, and the rise is brought beside each facility.
+   scenario, one family, one year and the middle quantile, and **Relate** brings the rise beside each facility,
+   matching its nearest gauge (`nearest_site_id`) to the projections' `site_id`.
 
 ## What this does not say
 

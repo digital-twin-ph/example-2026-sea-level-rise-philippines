@@ -134,7 +134,7 @@ const rasterFrom=(as,area,source)=>[
     {click:'#raster-url-source summary',label:'Or a GeoTIFF at a URL'},
     {fill:'raster-url',label:'URL of a GeoTIFF',value:source.url},
     {click:'#raster-url-read',label:'Read'}]
-   :[{file:'raster-file',label:'GeoTIFF file',path:source.path}]),
+   :[{file:'raster-file',label:'GeoTIFF or NetCDF file',path:source.path}]),
   {choose:'raster-padding',label:'Extra source coverage (when preparing a file)',value:'1'},
   {click:'#raster-save',label:'Save raster window'}];
 const sampleAt=(as,{points,raster,attribute,unit,bilinear})=>[

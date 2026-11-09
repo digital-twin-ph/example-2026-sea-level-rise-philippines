@@ -1606,7 +1606,7 @@
     },
     {
      "file": "raster-file",
-     "label": "GeoTIFF file",
+     "label": "GeoTIFF or NetCDF file",
      "path": "data/dtu25mss-manila.tif"
     },
     {
@@ -1641,7 +1641,7 @@
     },
     {
      "file": "raster-file",
-     "label": "GeoTIFF file",
+     "label": "GeoTIFF or NetCDF file",
      "path": "data/deltadtm-manila.tif"
     },
     {

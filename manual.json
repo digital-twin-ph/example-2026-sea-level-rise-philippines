@@ -751,6 +751,481 @@
      "see": "the diagram above the note, with its caption",
      "within": ".notes-part[data-section=\"Introduction\"]",
      "check": "Heights and the surfaces they are measured from"
+    },
+    {
+     "note": "Then the write-up as it would be submitted: what was asked, the sources and methods, what was found, and what it does not say. Each work is cited through the note’s citation builder and numbered in References."
+    },
+    {
+     "click": "[data-add-note=\"Introduction\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "Health facilities on low coasts are among the services a rising sea reaches first, and planning for them starts from a projection that applies to the place. IPCC AR6 publishes projections of relative sea-level change at tide gauges and on a grid, for several emissions scenarios. We asked which published projection applies to each of 194 health facilities in coastal Manila, how far from the facility it is measured, and how much sea level is projected to rise there by 2100."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "context"
+    },
+    {
+     "choose": "note-words",
+     "label": "Whose words?",
+     "value": "points"
+    },
+    {
+     "choose": "note-argument",
+     "label": "Whose argument?",
+     "value": "reports"
+    },
+    {
+     "click": "[data-note-tab=\"cite\"]",
+     "label": "Citations"
+    },
+    {
+     "choose": "cite-type",
+     "label": "Kind of work",
+     "value": "chapter"
+    },
+    {
+     "fill": "cite-authors",
+     "label": "Authors, one per line",
+     "value": "Fox-Kemper, B."
+    },
+    {
+     "click": "label:has(#cite-et-al)",
+     "label": "The work names more authors than these (et al.)"
+    },
+    {
+     "fill": "cite-title",
+     "label": "Title",
+     "value": "Ocean, Cryosphere and Sea Level Change"
+    },
+    {
+     "fill": "cite-published",
+     "label": "Published",
+     "value": "2021"
+    },
+    {
+     "fill": "cite-container",
+     "label": "Journal or containing work",
+     "value": "Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change"
+    },
+    {
+     "fill": "cite-pages",
+     "label": "Pages",
+     "value": "1211–1362"
+    },
+    {
+     "fill": "cite-publisher",
+     "label": "Publisher",
+     "value": "Cambridge University Press"
+    },
+    {
+     "fill": "cite-doi",
+     "label": "DOI",
+     "value": "10.1017/9781009157896.011"
+    },
+    {
+     "click": "#cite-add",
+     "label": "Add citation"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Methods\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "**Projections.** IPCC AR6 Sea Level Projections, version 20210809, medium confidence, extracted for the eight Philippine sites that are tide gauges: 288 values, for SSP1-2.6, SSP2-4.5 and SSP5-8.5, with and without vertical land motion, for 2050 and 2100, at the 0.17, 0.5 and 0.83 levels, in millimetres above the 1995–2014 mean. The middle level is reported as the median and the outer two as the likely range."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "source"
+    },
+    {
+     "choose": "note-words",
+     "label": "Whose words?",
+     "value": "points"
+    },
+    {
+     "choose": "note-argument",
+     "label": "Whose argument?",
+     "value": "reports"
+    },
+    {
+     "click": "[data-note-tab=\"cite\"]",
+     "label": "Citations"
+    },
+    {
+     "choose": "cite-type",
+     "label": "Kind of work",
+     "value": "dataset"
+    },
+    {
+     "fill": "cite-authors",
+     "label": "Authors, one per line",
+     "value": "Garner, Gregory G."
+    },
+    {
+     "click": "label:has(#cite-et-al)",
+     "label": "The work names more authors than these (et al.)"
+    },
+    {
+     "fill": "cite-title",
+     "label": "Title",
+     "value": "IPCC AR6 Sea Level Projections, version 20210809"
+    },
+    {
+     "fill": "cite-published",
+     "label": "Published",
+     "value": "2021-08-09"
+    },
+    {
+     "fill": "cite-publisher",
+     "label": "Publisher",
+     "value": "Zenodo"
+    },
+    {
+     "fill": "cite-doi",
+     "label": "DOI",
+     "value": "10.5281/zenodo.5914709"
+    },
+    {
+     "click": "#cite-add",
+     "label": "Add citation"
+    },
+    {
+     "choose": "cite-type",
+     "label": "Kind of work",
+     "value": "article"
+    },
+    {
+     "fill": "cite-authors",
+     "label": "Authors, one per line",
+     "value": "Kopp, Robert E."
+    },
+    {
+     "click": "label:has(#cite-et-al)",
+     "label": "The work names more authors than these (et al.)"
+    },
+    {
+     "fill": "cite-title",
+     "label": "Title",
+     "value": "The Framework for Assessing Changes To Sea-level (FACTS) v1.0"
+    },
+    {
+     "fill": "cite-published",
+     "label": "Published",
+     "value": "2023"
+    },
+    {
+     "fill": "cite-container",
+     "label": "Journal or containing work",
+     "value": "Geoscientific Model Development"
+    },
+    {
+     "fill": "cite-volume",
+     "label": "Volume",
+     "value": "16"
+    },
+    {
+     "fill": "cite-pages",
+     "label": "Pages",
+     "value": "7461–7489"
+    },
+    {
+     "fill": "cite-doi",
+     "label": "DOI",
+     "value": "10.5194/gmd-16-7461-2023"
+    },
+    {
+     "click": "#cite-add",
+     "label": "Add citation"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Methods\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "**Facilities.** 194 named hospitals (17) and clinics (177) from OpenStreetMap, retrieved on 2026-10-10 from the Humanitarian OpenStreetMap Team’s Philippines export and kept where they fall in a box over coastal Manila, 120.93° to 121.05° E and 14.52° to 14.68° N. © OpenStreetMap contributors, Open Database License 1.0. OpenStreetMap states no completeness, so this is what is mapped, not a register."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "source"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Methods\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "**Nearest gauge and its projection.** Each facility’s nearest gauge, and the great-circle distance to it on a sphere of 6,371.0088 km, came from Measure distance. Select rows narrowed the projections to one scenario, SSP2-4.5; one family, with vertical land motion; one year, 2100; and the median. Relate then brought that value beside each facility, matching its nearest gauge to the projections’ site."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "method"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Methods\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "**Why these choices.** SSP2-4.5 is an intermediate scenario, not a forecast. The family with vertical land motion is the change relative to the land, which is the change a building on that land meets; the family without it is reported beside it to show how much of the change is the land’s own motion. The median is reported with its likely range."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "rationale"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Results\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "All 194 facilities are nearest the Manila, South Harbor gauge, PSMSL 145, at 0.9 to 13.4 km; the median distance is 6.5 km, and 61 are within 5 km."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "finding"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Results\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "By 2100 under SSP2-4.5, relative sea level at the Manila gauge is projected to rise 1,124 mm above the 1995–2014 mean (likely range 963 to 1,366 mm), including vertical land motion. Without it, the same projection is 602 mm (442 to 841 mm), so the land’s motion accounts for about 520 mm of the median."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "finding"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Discussion\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "The land’s own motion roughly doubles the projected rise at Manila. The tide gauge’s record at PSMSL notes a rising trend “suspected to be due to deposition from the river discharges and excessive reclamation although subsidence not totally discarded”. A projection that left out vertical land motion would understate the change facilities here meet."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "context"
+    },
+    {
+     "choose": "note-words",
+     "label": "Whose words?",
+     "value": "points"
+    },
+    {
+     "choose": "note-argument",
+     "label": "Whose argument?",
+     "value": "own"
+    },
+    {
+     "click": "[data-note-tab=\"cite\"]",
+     "label": "Citations"
+    },
+    {
+     "choose": "cite-type",
+     "label": "Kind of work",
+     "value": "webpage"
+    },
+    {
+     "fill": "cite-authors",
+     "label": "Authors, one per line",
+     "value": "Permanent Service for Mean Sea Level"
+    },
+    {
+     "fill": "cite-title",
+     "label": "Title",
+     "value": "Manila, South Harbor: station 145"
+    },
+    {
+     "fill": "cite-published",
+     "label": "Published",
+     "value": "2026-10-19"
+    },
+    {
+     "fill": "cite-url",
+     "label": "URL",
+     "value": "https://psmsl.org/data/obtaining/stations/145.php"
+    },
+    {
+     "fill": "cite-retrieved",
+     "label": "Accessed",
+     "value": "2026-11-09"
+    },
+    {
+     "click": "#cite-add",
+     "label": "Add citation"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Discussion\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "**Not a flood map.** A rise at a gauge does not say which ground it would reach: that needs the ground’s height and the local sea’s, measured from the same surface. At the Manila gauge, EGM2008, which open terrain models measure from, and NAMRIA’s gravimetric geoid agree within 2 mm (43.009 and 43.011 m above the ellipsoid), and NAMRIA’s geoid fitted to mean sea level stands 0.85 m above both. A height above EGM2008 there is about 0.85 m more than the same point’s height above NAMRIA’s mean sea level. Which years that mean sea level stands for is not stated, and the gauge’s record rises about 15 mm a year over 1995–2014, so its offset from the AR6 baseline is not yet known. No facility is said to lie below a projected sea level."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "limitation"
+    },
+    {
+     "choose": "note-words",
+     "label": "Whose words?",
+     "value": "points"
+    },
+    {
+     "choose": "note-argument",
+     "label": "Whose argument?",
+     "value": "own"
+    },
+    {
+     "click": "[data-note-tab=\"cite\"]",
+     "label": "Citations"
+    },
+    {
+     "choose": "cite-type",
+     "label": "Kind of work",
+     "value": "dataset"
+    },
+    {
+     "fill": "cite-authors",
+     "label": "Authors, one per line",
+     "value": "National Mapping and Resource Information Authority"
+    },
+    {
+     "fill": "cite-title",
+     "label": "Title",
+     "value": "Philippine Geoid Model 2018 (PhilGeoidApp2019)"
+    },
+    {
+     "fill": "cite-published",
+     "label": "Published",
+     "value": "2019"
+    },
+    {
+     "fill": "cite-url",
+     "label": "URL",
+     "value": "https://www.namria.gov.ph/projects.aspx"
+    },
+    {
+     "fill": "cite-retrieved",
+     "label": "Accessed",
+     "value": "2026-11-09"
+    },
+    {
+     "click": "#cite-add",
+     "label": "Add citation"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Discussion\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "**One projection for all.** Every facility takes the Manila gauge’s projection, from 0.9 to 13.4 km away. A projection is for its gauge, and how much the change varies across the city is not known from these data. The facilities are what OpenStreetMap maps, and an absence among them is not an absence on the ground."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "limitation"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "click": "[data-add-note=\"Discussion\"]",
+     "view": "notes",
+     "label": "note"
+    },
+    {
+     "fill": "note-text",
+     "label": "The note",
+     "value": "**Checks.** The eight AR6 site numbers were compared with PSMSL’s station pages: number, name and position agree for all eight, although AR6’s own pages do not state the numbering. Both workflows were built by performing this repository’s manual from an empty canvas, and the published project is the result of that run."
+    },
+    {
+     "choose": "note-function",
+     "label": "Function",
+     "value": "verification"
+    },
+    {
+     "click": "#note-save",
+     "label": "Add note"
+    },
+    {
+     "see": "eleven authored notes across the four parts, and References listing the five works cited",
+     "within": ".notes-part[data-section=\"References\"]",
+     "check": "Kopp"
     }
    ]
   }

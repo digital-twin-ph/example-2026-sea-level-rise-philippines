@@ -132,7 +132,17 @@ workflows.push({name:'How much is sea level projected to rise at each facility�
   {click:'#config-apply',label:'Apply',dialog:RELATE},
   {connect:{from:'rise',to:'table',port:'table'}},
   {run:true},
-  {see:'each facility, its gauge, its distance, and the rise there: 1,124 mm by 2100 under SSP2-4.5, the middle projection, with vertical land motion',check:'1124'}]});
+  {see:'each facility, its gauge, its distance, and the rise there: 1,124 mm by 2100 under SSP2-4.5, the middle projection, with vertical land motion',check:'1124'},
+  // THE DIAGRAM, AS A NOTE OF THE PROJECT: why a rise at a gauge is not a flood map, in the Introduction of the write-up.
+  {note:'In Notes, add a note to the Introduction saying why a rise at a gauge does not say which ground would flood, with the vertical-datum diagram from this repository.'},
+  {click:'[data-add-note="Introduction"]',view:'notes',label:'note'},
+  {fill:'note-text',label:'The note',value:'A projected rise is a change in the sea’s level at a tide gauge. Saying which ground it would reach needs the height of the ground and the height of the local sea measured from the same surface, and open terrain models measure from a geoid, not from the local sea.'},
+  {click:'[data-note-tab="image"]',label:'Image'},
+  {file:'note-image-file',label:'Picture: PNG, JPEG, WebP or SVG',path:'docs/vertical-datums.svg'},
+  {fill:'note-image-alt',label:'Alt text: what the picture shows',value:'A cross-section of a low coast, not to scale. From the bottom: the WGS84 ellipsoid; the geoid; local mean sea level over 1995–2014, the AR6 baseline, above the geoid by an offset; and a projected sea level above that. On land, bare ground and the surface with roofs and trees.'},
+  {fill:'note-image-caption',label:'Caption: what a reader is to take from it',value:'Heights and the surfaces they are measured from. A terrain model gives H above the geoid; a projection is a rise above local mean sea level; comparing them needs the offset between the two. Not to scale.'},
+  {click:'#note-save',label:'Add note'},
+  {see:'the diagram above the note, with its caption',within:'.notes-part[data-section="Introduction"]',check:'Heights and the surfaces they are measured from'}]});
 
 writeFileSync(new URL('../manual.json',import.meta.url),JSON.stringify({
   schema:'fieldwork/worked-example-manual/1',example:'urn:fieldwork:example:sea-level-rise-philippines',

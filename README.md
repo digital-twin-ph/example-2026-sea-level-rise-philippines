@@ -58,7 +58,7 @@ Discussion what the land's motion means, why this is not a flood map, and the ch
    scenario, one family, one year and the middle quantile, and **Relate** brings the rise beside each facility,
    matching its nearest gauge (`nearest_site_id`) to the projections' `site_id`.
 3. **Which facilities stand on ground below the sea level projected for 2100?** Raster input keeps three grids around
-   the study area: EGM2008 read where PROJ publishes it, and the two subsets here. Sample raster reads the ground at
+   the study area: EGM2008 read where PROJ publishes it, and the two subsets here. Sample a raster reads the ground at
    each facility and the sea surface and geoid at each gauge. Rules written on the canvas put the ground above the AR6
    baseline, and the published ruleset *Compare a projected rise with an elevation* sets the rise against it:
    **16 of 194**. A check in Python on the source files gives the same.

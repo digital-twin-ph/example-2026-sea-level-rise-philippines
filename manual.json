@@ -1680,31 +1680,31 @@
     {
      "click": "#configure-step",
      "label": "Configure…",
-     "opens": "Sample raster at points"
+     "opens": "Sample a raster at points or over areas"
     },
     {
      "fill": "sample-attribute",
      "label": "Attribute to write",
      "value": "egm2008_m",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "fill": "sample-unit",
      "label": "What those values measure",
      "value": "metres above the WGS84 ellipsoid",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "choose": "sample-method",
      "label": "Read each value as",
      "value": "bilinear",
      "shown": "between the four nearest cells",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "click": "#config-apply",
      "label": "Apply",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "add": "sample_raster",
@@ -1730,31 +1730,31 @@
     {
      "click": "#configure-step",
      "label": "Configure…",
-     "opens": "Sample raster at points"
+     "opens": "Sample a raster at points or over areas"
     },
     {
      "fill": "sample-attribute",
      "label": "Attribute to write",
      "value": "mss_m",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "fill": "sample-unit",
      "label": "What those values measure",
      "value": "metres above the WGS84 ellipsoid, 1993–2012",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "choose": "sample-method",
      "label": "Read each value as",
      "value": "bilinear",
      "shown": "between the four nearest cells",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "click": "#config-apply",
      "label": "Apply",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "note": "At the facilities: the ground, the cell containing each."
@@ -1783,24 +1783,24 @@
     {
      "click": "#configure-step",
      "label": "Configure…",
-     "opens": "Sample raster at points"
+     "opens": "Sample a raster at points or over areas"
     },
     {
      "fill": "sample-attribute",
      "label": "Attribute to write",
      "value": "ground_m",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "fill": "sample-unit",
      "label": "What those values measure",
      "value": "metres above EGM2008",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "click": "#config-apply",
      "label": "Apply",
-     "dialog": "Sample raster at points"
+     "dialog": "Sample a raster at points or over areas"
     },
     {
      "note": "Each facility’s nearest gauge, carrying the gauge’s geoid and sea surface, and the facility’s ground."

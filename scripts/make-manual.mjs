@@ -123,7 +123,7 @@ const WORKS={
 };
 
 // THE THIRD WORKFLOW'S PIECES: a raster kept around the study area, read at points, and rules written by hand.
-const RULES='Apply ruleset',SAMPLE='Sample raster at points';
+const RULES='Apply ruleset',SAMPLE='Sample a raster at points or over areas';
 const predicate=column=>`fwa:${column.replace(/[^A-Za-z0-9]+(.)/g,(_,c)=>c.toUpperCase()).replace(/[^A-Za-z0-9]/g,'')}`;
 const at=(r,part,extra='')=>`[data-rule="${r}"]${extra}[data-part="${part}"]`;
 const cond=(r,c)=>`[data-group="0"][data-condition="${c}"]`;
@@ -136,7 +136,7 @@ const rasterFrom=(as,area,source)=>[
     {click:'#raster-url-read',label:'Read'}]
    :[{file:'raster-file',label:'GeoTIFF or NetCDF file',path:source.path}]),
   {choose:'raster-padding',label:'Extra source coverage (when preparing a file)',value:'1'},
-  {click:'#raster-save',label:'Save raster window'}];
+  {click:'#config-apply',label:'Apply',dialog:'Raster input'}];
 const sampleAt=(as,{points,raster,attribute,unit,bilinear})=>[
   {add:'sample_raster',as},{connect:{from:points,to:as,port:'points'}},{connect:{from:raster,to:as,port:'raster'}},{select:as},
   {click:'#configure-step',label:'Configure…',opens:SAMPLE},

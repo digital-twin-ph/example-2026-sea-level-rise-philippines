@@ -1580,8 +1580,9 @@
      "value": "1"
     },
     {
-     "click": "#raster-save",
-     "label": "Save raster window"
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Raster input"
     },
     {
      "note": "The mean sea surface of 1993–2012, DTU25MSS, from the subset in this repository: DTU’s server lets no browser read the whole file in parts. Download the whole file from DTU instead and choose it here, if you prefer."
@@ -1615,8 +1616,9 @@
      "value": "1"
     },
     {
-     "click": "#raster-save",
-     "label": "Save raster window"
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Raster input"
     },
     {
      "note": "The ground, DeltaDTM, from the subset in this repository: bare ground above EGM2008, about 30 m cells, a mean absolute error of 0.45 m. A value of 30 is its ceiling, above its range."
@@ -1650,8 +1652,9 @@
      "value": "1"
     },
     {
-     "click": "#raster-save",
-     "label": "Save raster window"
+     "click": "#config-apply",
+     "label": "Apply",
+     "dialog": "Raster input"
     },
     {
      "note": "At the gauges: the geoid and the sea surface, each read between the four nearest cells, as PROJ reads a geoid."

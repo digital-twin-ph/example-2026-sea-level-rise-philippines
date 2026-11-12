@@ -418,7 +418,7 @@
     {
      "fill": "table-url",
      "label": "URL of a CSV, Stata file or zip",
-     "value": "https://raw.githubusercontent.com/digital-twin-ph/example-2026-sea-level-rise-philippines/c9389886237d9c7885dc82d6cbefcf0fbb2fdfdc/data/ar6-projections-philippine-gauges.csv",
+     "value": "https://raw.githubusercontent.com/digital-twin-ph/example-2026-sea-level-rise-philippines/0c800449a43832213af4eaab941457bccdb8a8e3/data/ar6-projections-philippine-gauges.csv",
      "dialog": "Tabular data"
     },
     {
@@ -2041,7 +2041,7 @@
     {
      "fill": "table-url",
      "label": "URL of a CSV, Stata file or zip",
-     "value": "https://raw.githubusercontent.com/digital-twin-ph/example-2026-sea-level-rise-philippines/c9389886237d9c7885dc82d6cbefcf0fbb2fdfdc/data/ar6-projections-philippine-gauges.csv",
+     "value": "https://raw.githubusercontent.com/digital-twin-ph/example-2026-sea-level-rise-philippines/0c800449a43832213af4eaab941457bccdb8a8e3/data/ar6-projections-philippine-gauges.csv",
      "dialog": "Tabular data"
     },
     {

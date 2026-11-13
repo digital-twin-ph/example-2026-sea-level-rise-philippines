@@ -406,7 +406,7 @@
      "select": "projections"
     },
     {
-     "click": "#open-table",
+     "click": "#configure-step",
      "label": "Configure…",
      "opens": "Tabular data"
     },
@@ -2029,7 +2029,7 @@
      "select": "projections"
     },
     {
-     "click": "#open-table",
+     "click": "#configure-step",
      "label": "Configure…",
      "opens": "Tabular data"
     },

@@ -454,7 +454,7 @@
     },
     {
      "fill": "table-unit",
-     "label": "Unit of the value (entered by you)",
+     "label": "Unit of the value",
      "value": "millimetre",
      "dialog": "Tabular data"
     },
@@ -2077,7 +2077,7 @@
     },
     {
      "fill": "table-unit",
-     "label": "Unit of the value (entered by you)",
+     "label": "Unit of the value",
      "value": "millimetre",
      "dialog": "Tabular data"
     },

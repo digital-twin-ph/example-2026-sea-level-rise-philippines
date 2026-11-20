@@ -411,8 +411,8 @@
      "opens": "Tabular data"
     },
     {
-     "click": "#table-remote summary",
-     "label": "Or fetch from a URL",
+     "click": "#table-tab-remote",
+     "label": "From an address",
      "dialog": "Tabular data"
     },
     {
@@ -2034,8 +2034,8 @@
      "opens": "Tabular data"
     },
     {
-     "click": "#table-remote summary",
-     "label": "Or fetch from a URL",
+     "click": "#table-tab-remote",
+     "label": "From an address",
      "dialog": "Tabular data"
     },
     {

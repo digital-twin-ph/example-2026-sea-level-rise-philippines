@@ -49,7 +49,7 @@ const steps={
   projections:as=>[
     {add:'table_input',as},{select:as},
     {click:'#open-table',label:'Configure…',opens:'Tabular data'},
-    {click:'#table-remote summary',label:'Or fetch from a URL',dialog:'Tabular data'},
+    {click:'#table-tab-remote',label:'From an address',dialog:'Tabular data'},
     {fill:'table-url',label:'URL of a CSV, Stata file or zip',value:RAW+'ar6-projections-philippine-gauges.csv',dialog:'Tabular data'},
     {click:'#table-fetch',label:'Fetch',dialog:'Tabular data'},
     {choose:'table-shape',label:'Shape of the file',value:'long',shown:'Long',dialog:'Tabular data'},

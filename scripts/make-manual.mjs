@@ -21,7 +21,7 @@ const steps={
     {add:'point_input',as},{select:as},
     {click:'#configure-step',label:'Configure…',opens:'Input data'},
     {choose:'input-mode',label:'Input method',value:'geojson',shown:'Import GeoJSON'},
-    {file:'input-file',label:'Local file · 5 MB maximum',path},
+    {file:'input-file',label:'Local file · 40 MB maximum',path},
     {click:'#input-apply',label:'Save Edits'},
     {fill:'source-label',label:'Name',value:label},
     {click:'[data-label-form="source-label"] button',label:'Apply label'}],

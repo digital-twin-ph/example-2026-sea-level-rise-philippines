@@ -149,8 +149,8 @@
      "path": "data/ar6-projection-sites.geojson"
     },
     {
-     "click": "#input-apply",
-     "label": "Save Edits"
+     "click": "#config-apply",
+     "label": "Apply"
     },
     {
      "fill": "source-label",
@@ -365,8 +365,8 @@
      "path": "data/ar6-projection-sites.geojson"
     },
     {
-     "click": "#input-apply",
-     "label": "Save Edits"
+     "click": "#config-apply",
+     "label": "Apply"
     },
     {
      "fill": "source-label",
@@ -1528,8 +1528,8 @@
      "path": "data/ar6-projection-sites.geojson"
     },
     {
-     "click": "#input-apply",
-     "label": "Save Edits"
+     "click": "#config-apply",
+     "label": "Apply"
     },
     {
      "fill": "source-label",

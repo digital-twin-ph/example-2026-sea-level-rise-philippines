@@ -22,7 +22,11 @@ const steps={
     {click:'#configure-step',label:'Configure…',opens:'Input data'},
     {choose:'input-mode',label:'Input method',value:'geojson',shown:'Import GeoJSON'},
     {file:'input-file',label:'Local file · 40 MB maximum',path},
-    {click:'#input-apply',label:'Save Edits'},
+    // #config-apply, NOT #input-apply (2026-11-24). Fieldwork has no control by that id and no button reading
+    // "Save Edits"; every Configure… dialog applies with #config-apply. The committed manual.json already said so,
+    // which is the only reason the test passed: this generator had drifted from its own output, so regenerating it
+    // would have replaced two working steps with ones that click nothing.
+    {click:'#config-apply',label:'Apply'},
     {fill:'source-label',label:'Name',value:label},
     {click:'[data-label-form="source-label"] button',label:'Apply label'}],
   // THE FACILITIES, AS A PERSON FINDS THEM: Find health facilities, the Humanitarian OpenStreetMap Team's country
@@ -33,6 +37,12 @@ const steps={
     {select:as},
     {click:'#configure-step',label:'Configure…',opens:'Find health facilities'},
     {choose:'hf-source',label:'Source',value:'hdx-hot-export',shown:'HDX country export',dialog:'Find health facilities'},
+    // THE COUNTRY IS THIS EXAMPLE'S TO STATE (2026-11-24). It was never chosen here: Fieldwork created every Find
+    // health facilities step carrying country:'PHL', and this example quietly lived on that default. The
+    // practitioner, on finding it: *"No widget should be configured dependent on a worked example."* The default is
+    // gone, so the example says which country its export covers — which it should have said anyway, because the
+    // study area is read from a GeoJSON file and states no country for the step to read.
+    {choose:'hf-country',label:'Country',value:'PHL',shown:'Philippines (PHL)',dialog:'Find health facilities'},
     {click:'#config-apply',label:'Apply',dialog:'Find health facilities'},
     {click:'#hf-retrieve',label:'Retrieve facilities'}],
   // THE STUDY AREA, a box over coastal Manila, from its file.

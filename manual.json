@@ -114,6 +114,13 @@
      "dialog": "Find health facilities"
     },
     {
+     "choose": "hf-country",
+     "label": "Country",
+     "value": "PHL",
+     "shown": "Philippines (PHL)",
+     "dialog": "Find health facilities"
+    },
+    {
      "click": "#config-apply",
      "label": "Apply",
      "dialog": "Find health facilities"
@@ -330,6 +337,13 @@
      "label": "Source",
      "value": "hdx-hot-export",
      "shown": "HDX country export",
+     "dialog": "Find health facilities"
+    },
+    {
+     "choose": "hf-country",
+     "label": "Country",
+     "value": "PHL",
+     "shown": "Philippines (PHL)",
      "dialog": "Find health facilities"
     },
     {
@@ -1493,6 +1507,13 @@
      "label": "Source",
      "value": "hdx-hot-export",
      "shown": "HDX country export",
+     "dialog": "Find health facilities"
+    },
+    {
+     "choose": "hf-country",
+     "label": "Country",
+     "value": "PHL",
+     "shown": "Philippines (PHL)",
      "dialog": "Find health facilities"
     },
     {
